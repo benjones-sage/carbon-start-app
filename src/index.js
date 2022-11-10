@@ -18,14 +18,13 @@ import {
 } from "carbon-react/lib/components/accordion";
 const App = () => {
   return (
-    <CarbonProvider theme={sageTheme}>
-      <GlobalStyle />
-        <div id="app" className='mainframe'>
-          <MainFrame>
+    <CarbonProvider theme={sageTheme} id= {'CarbonProvider'}>
+      <GlobalStyle id= {"GlobalStyle"}/>
+          <MainFrame id={"MainFrame"}>
 
 
       <Box height="80px" bg="white"> <h1 style={{"marginTop": 0}}>Sage bank feeds terms and conditions</h1></Box>
-            <AccordionGroup>
+            <AccordionGroup id={"Accordion-Group"}>
               <Accordion subTitle="What Sage can do with your data">
                 <Box p={2}>
                   <Textbox label="Textbox in an Accordion" />
@@ -48,7 +47,6 @@ const App = () => {
             Read the Sage bank feeds <a href="">terms and conditions</a> for more information.</p>
             <Footer/>
           </MainFrame>
-        </div>
     </CarbonProvider>
   );
 };

@@ -1,237 +1,303 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="theme-color" content="#000000">
-        <!--
-          manifest.json provides metadata used when your web app is added to the
-          homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-        -->
-        <link rel="manifest" href="/manifest.json">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <!--
-          Notice the use of  in the tags above.
-          It will be replaced with the URL of the `public` folder during the build.
-          Only files inside the `public` folder can be referenced from the HTML.
-    
-          Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
-          work correctly both with client-side routing and a non-root public URL.
-          Learn how to configure a non-root public URL by running `npm run build`.
-        -->
-    
-        <title>React App</title>
-    
-        <style>
-          /* These are only needed in codesandbox */
-          @font-face {
-            font-family: "Sage UI";
-            src: url(https://raw.githack.com/Sage/design-tokens/master/assets/fonts/sageui-regular.woff2)
-              format("woff2");
-            font-weight: 400;
-            font-style: normal;
-          }
-    
-          @font-face {
-            font-family: "Sage UI";
-            src: url(https://raw.githack.com/Sage/design-tokens/master/assets/fonts/sageui-medium.woff2)
-              format("woff2");
-            font-weight: 700;
-            font-style: normal;
-          }
-    
-          @font-face {
-            font-family: "Sage UI";
-            src: url(https://raw.githack.com/Sage/design-tokens/master/assets/fonts/sageui-bold.woff2)
-              format("woff2");
-            font-weight: 900;
-            font-style: normal;
-          }
-    
-          @font-face {
-            font-family: "CarbonIcons";
-            src: url(https://raw.githack.com/Sage/carbon/master/src/style/assets/carbon-icons-webfont.woff)
-              format("woff");
-            font-weight: normal;
-            font-style: normal;
-          }
-        </style>
-      <script defer="" src="/static/js/bundle.js"></script><style data-styled="" data-styled-version="4.4.1">
-    /* sc-component-id: sc-bdVaJa */
-    .flCyIZ{margin:0;padding:0;width:auto;display:inline;--metaName:Base Theme;--metaPublic:true;--colorsUtilityMajor100:#ccd6dbff;--colorsUtilityMajor150:#b3c2c9ff;--colorsUtilityMajor200:#99adb7ff;--colorsUtilityMajor300:#668494ff;--colorsUtilityMajor400:#335b70ff;--colorsUtilityMajor450:#19475eff;--colorsUtilityMajor500:#00324cff;--colorsUtilityMajor800:#00141eff;--colorsUtilityMajor025:#f2f5f6ff;--colorsUtilityMajor010:#fafbfbff;--colorsUtilityMajor040:#edf1f2ff;--colorsUtilityMajor050:#e6ebedff;--colorsUtilityMajor075:#d9e0e4ff;--colorsUtilityMajorTransparent:#00000000;--colorsUtilityYin030:#0000004d;--colorsUtilityYin055:#0000008c;--colorsUtilityYin065:#000000a6;--colorsUtilityYin090:#000000e6;--colorsUtilityYang100:#ffffffff;--colorsUtilityDisabled400:#f2f5f6ff;--colorsUtilityDisabled500:#e6ebedff;--colorsUtilityDisabled600:#ccd6dbff;--colorsUtilityReadOnly400:#f2f5f6ff;--colorsUtilityReadOnly500:#e6ebedff;--colorsUtilityReadOnly600:#ccd6dbff;--colorsActionMajor150:#b3d9c8ff;--colorsActionMajor350:#4da77eff;--colorsActionMajor450:#198e59ff;--colorsActionMajor500:#007e45ff;--colorsActionMajor600:#006738ff;--colorsActionMajor700:#004d2aff;--colorsActionMajor025:#f2f9f6ff;--colorsActionMajorTransparent:#00000000;--colorsActionMajorYin030:#0000004d;--colorsActionMajorYin055:#0000008c;--colorsActionMajorYin065:#000000a6;--colorsActionMajorYin090:#000000e6;--colorsActionMajorYang100:#ffffffff;--colorsActionMajorYang030:#ffffff4d;--colorsActionMinor100:#e6ebedff;--colorsActionMinor150:#d9e0e4ff;--colorsActionMinor200:#ccd6dbff;--colorsActionMinor250:#b3c2c9ff;--colorsActionMinor300:#99adb7ff;--colorsActionMinor400:#668494ff;--colorsActionMinor500:#335b70ff;--colorsActionMinor550:#19475eff;--colorsActionMinor600:#00324cff;--colorsActionMinor850:#001926ff;--colorsActionMinor900:#00141eff;--colorsActionMinor025:#fafbfbff;--colorsActionMinor050:#f2f5f6ff;--colorsActionMinorTransparent:#00000000;--colorsActionMinorYin030:#0000004d;--colorsActionMinorYin055:#0000008c;--colorsActionMinorYin065:#000000a6;--colorsActionMinorYin090:#000000e6;--colorsActionMinorYang100:#ffffffff;--colorsActionDisabled400:#f2f5f6ff;--colorsActionDisabled500:#e6ebedff;--colorsActionDisabled600:#ccd6dbff;--colorsActionReadOnly400:#f2f5f6ff;--colorsActionReadOnly500:#e6ebedff;--colorsActionReadOnly600:#ccd6dbff;--colorsSemanticNeutral200:#ccd6dbff;--colorsSemanticNeutral500:#335b70ff;--colorsSemanticNeutral600:#00324cff;--colorsSemanticNeutralTransparent:#00000000;--colorsSemanticNeutralYin030:#0000004d;--colorsSemanticNeutralYin055:#0000008c;--colorsSemanticNeutralYin065:#000000a6;--colorsSemanticNeutralYin090:#000000e6;--colorsSemanticNeutralYang100:#ffffffff;--colorsSemanticFocus250:#ffda80ff;--colorsSemanticFocus500:#ffb500ff;--colorsSemanticFocusTransparent:#00000000;--colorsSemanticPositive500:#008a21ff;--colorsSemanticPositive600:#006e1aff;--colorsSemanticPositiveTransparent:#00000000;--colorsSemanticPositiveYin030:#0000004d;--colorsSemanticPositiveYin055:#0000008c;--colorsSemanticPositiveYin065:#000000a6;--colorsSemanticPositiveYin090:#000000e6;--colorsSemanticPositiveYang100:#ffffffff;--colorsSemanticNegative350:#db7380ff;--colorsSemanticNegative450:#d04b5cff;--colorsSemanticNegative500:#cb374aff;--colorsSemanticNegative600:#a22c3bff;--colorsSemanticNegativeTransparent:#00000000;--colorsSemanticNegativeYin030:#0000004d;--colorsSemanticNegativeYin055:#0000008c;--colorsSemanticNegativeYin065:#000000a6;--colorsSemanticNegativeYin090:#000000e6;--colorsSemanticNegativeYang100:#ffffffff;--colorsSemanticCaution400:#f28533ff;--colorsSemanticCaution500:#ef6700ff;--colorsSemanticCaution600:#bf5200ff;--colorsSemanticCaution650:#a74800ff;--colorsSemanticCautionTransparent:#00000000;--colorsSemanticCautionYin030:#0000004d;--colorsSemanticCautionYin055:#0000008c;--colorsSemanticCautionYin065:#000000a6;--colorsSemanticCautionYin090:#000000e6;--colorsSemanticCautionYang100:#ffffffff;--colorsSemanticInfo150:#b3cfe5ff;--colorsSemanticInfo500:#0060a7ff;--colorsSemanticInfo600:#004d86ff;--colorsSemanticInfoTransparent:#00000000;--colorsSemanticInfoYin030:#0000004d;--colorsSemanticInfoYin055:#0000008c;--colorsSemanticInfoYin065:#000000a6;--colorsSemanticInfoYin090:#000000e6;--colorsSemanticInfoYang100:#ffffffff;--colorsLogo:#00d639ff;--colorsTransparent:#00000000;--colorsYin030:#0000004d;--colorsYin055:#0000008c;--colorsYin065:#000000a6;--colorsYin075:#000000bf;--colorsYin090:#000000e6;--colorsYang100:#ffffffff;--colorsYang030:#ffffff4d;--colorsYang080:#ffffffcc;--colorsGray600:#666666ff;--colorsGray700:#4d4d4dff;--colorsGray750:#404040ff;--colorsGray850:#262626ff;--colorsGray900:#191919ff;--colorsGray1000:#000000ff;--colorsGray000:#ffffffff;--colorsDisabled400:#f2f5f6ff;--colorsDisabled500:#e6ebedff;--colorsDisabled600:#ccd6dbff;--colorsReadOnly400:#f2f5f6ff;--colorsReadOnly500:#e6ebedff;--colorsReadOnly600:#ccd6dbff;--colorsComponentsMenuSpringStandard500:#e6ebedff;--colorsComponentsMenuSpringStandard600:#007e45ff;--colorsComponentsMenuSpringStandard700:#d9e0e4ff;--colorsComponentsMenuSpringParent500:#e6ebedff;--colorsComponentsMenuSpringParent600:#007e45ff;--colorsComponentsMenuSpringParent700:#d9e0e4ff;--colorsComponentsMenuSpringChild400:#ccd6dbff;--colorsComponentsMenuSpringChild500:#ffffffff;--colorsComponentsMenuSpringChild600:#007e45ff;--colorsComponentsMenuSpringChildAlt400:#ccd6dbff;--colorsComponentsMenuSpringChildAlt500:#e6ebedff;--colorsComponentsMenuSpringChildAlt600:#007e45ff;--colorsComponentsMenuSummerStandard400:#ccd6dbff;--colorsComponentsMenuSummerStandard500:#ffffffff;--colorsComponentsMenuSummerStandard600:#007e45ff;--colorsComponentsMenuSummerStandard700:#e6ebedff;--colorsComponentsMenuSummerStandard800:#e6ebedff;--colorsComponentsMenuSummerParent400:#ccd6dbff;--colorsComponentsMenuSummerParent500:#ffffffff;--colorsComponentsMenuSummerParent600:#007e45ff;--colorsComponentsMenuSummerParent700:#e6ebedff;--colorsComponentsMenuSummerParent800:#e6ebedff;--colorsComponentsMenuSummerChild300:#b3c2c9ff;--colorsComponentsMenuSummerChild400:#ccd6dbff;--colorsComponentsMenuSummerChild500:#e6ebedff;--colorsComponentsMenuSummerChild600:#007e45ff;--colorsComponentsMenuSummerChild700:#e6ebedff;--colorsComponentsMenuSummerChild800:#e6ebedff;--colorsComponentsMenuSummerChildAlt300:#b3c2c9ff;--colorsComponentsMenuSummerChildAlt400:#ccd6dbff;--colorsComponentsMenuSummerChildAlt500:#d9e0e4ff;--colorsComponentsMenuSummerChildAlt600:#007e45ff;--colorsComponentsMenuSummerChildAlt700:#d9e0e4ff;--colorsComponentsMenuSummerChildAlt800:#d9e0e4ff;--colorsComponentsMenuAutumnStandard500:#00324cff;--colorsComponentsMenuAutumnStandard600:#007e45ff;--colorsComponentsMenuAutumnStandard700:#19475eff;--colorsComponentsMenuAutumnParent500:#00324cff;--colorsComponentsMenuAutumnParent600:#007e45ff;--colorsComponentsMenuAutumnParent700:#19475eff;--colorsComponentsMenuAutumnChild400:#19475eff;--colorsComponentsMenuAutumnChild500:#001926ff;--colorsComponentsMenuAutumnChild600:#007e45ff;--colorsComponentsMenuAutumnChildAlt400:#19475eff;--colorsComponentsMenuAutumnChildAlt500:#00324cff;--colorsComponentsMenuAutumnChildAlt600:#007e45ff;--colorsComponentsMenuWinterStandard400:#4d4d4dff;--colorsComponentsMenuWinterStandard500:#000000ff;--colorsComponentsMenuWinterStandard600:#007e45ff;--colorsComponentsMenuWinterStandard700:#262626ff;--colorsComponentsMenuWinterStandard800:#262626ff;--colorsComponentsMenuWinterParent400:#4d4d4dff;--colorsComponentsMenuWinterParent500:#000000ff;--colorsComponentsMenuWinterParent600:#007e45ff;--colorsComponentsMenuWinterParent700:#262626ff;--colorsComponentsMenuWinterParent800:#262626ff;--colorsComponentsMenuWinterChild300:#666666ff;--colorsComponentsMenuWinterChild400:#4d4d4dff;--colorsComponentsMenuWinterChild500:#262626ff;--colorsComponentsMenuWinterChild600:#007e45ff;--colorsComponentsMenuWinterChild700:#262626ff;--colorsComponentsMenuWinterChild800:#262626ff;--colorsComponentsMenuWinterChildAlt300:#666666ff;--colorsComponentsMenuWinterChildAlt400:#4d4d4dff;--colorsComponentsMenuWinterChildAlt500:#404040ff;--colorsComponentsMenuWinterChildAlt600:#007e45ff;--colorsComponentsMenuWinterChildAlt700:#404040ff;--colorsComponentsMenuWinterChildAlt800:#404040ff;--colorsComponentsMenuYin100:#000000ff;--colorsComponentsMenuYin065:#000000a6;--colorsComponentsMenuYin090:#000000e6;--colorsComponentsMenuYang100:#ffffffff;--colorsComponentsMenuYang080:#ffffffcc;--colorsComponentsMenuTransparent:#00000000;--sizing100:8px;--sizing125:10px;--sizing150:12px;--sizing175:14px;--sizing200:16px;--sizing250:20px;--sizing275:22px;--sizing300:24px;--sizing350:28px;--sizing375:30px;--sizing400:32px;--sizing450:36px;--sizing500:40px;--sizing525:42px;--sizing600:48px;--sizing700:56px;--sizing800:64px;--sizing900:72px;--sizing1000:80px;--sizing1200:96px;--sizing1300:104px;--sizing1600:128px;--sizing010:1px;--sizing025:2px;--sizing050:4px;--sizing075:6px;--sizingLogowidth:40px;--spacing100:8px;--spacing110:9px;--spacing125:10px;--spacing150:12px;--spacing200:16px;--spacing250:20px;--spacing300:24px;--spacing400:32px;--spacing500:40px;--spacing600:48px;--spacing700:56px;--spacing800:64px;--spacing900:72px;--spacing1000:80px;--spacing000:0;--spacing010:1px;--spacing025:2px;--spacing050:4px;--spacing060:5px;--spacing075:6px;--spacingNeg010:-1px;--spacingNeg025:-2px;--spacingNeg050:-4px;--spacingNeg075:-6px;--borderWidth100:1px;--borderWidth200:2px;--borderWidth300:3px;--borderWidth400:4px;--borderWidth000:0px;--fontSizes100:14px;--fontSizes200:16px;--fontSizes300:18px;--fontSizes400:20px;--fontSizes500:22px;--fontSizes600:24px;--fontSizes700:32px;--fontSizes800:40px;--fontSizes900:48px;--fontSizes1000:56px;--fontSizes010:10px;--fontSizes025:12px;--fontSizes050:13px;--boxShadow100:0 5px 5px 0 #00141e33,0 10px 10px 0 #00141e1a;--boxShadow150:0 -4px 12px 0 #00141e0d;--boxShadow200:0 10px 20px 0 #00141e33,0 20px 40px 0 #00141e1a;--boxShadow300:0 10px 30px 0 #00141e1a,0 30px 60px 0 #00141e1a;--boxShadow400:0 10px 40px 0 #00141e0a,0 50px 80px 0 #00141e1a;--boxShadow010:inset 0 -1px 0 0 #e6ebedff;--boxShadow050:0 3px 3px 0 #00141e33,0 2px 4px 0 #00141e26;--boxShadow075:inset 0 6px 4px -4px #00141e0d;--boxShadow090:0 4px 8px -4px #00141e1a;--boxShadow091:4px 0 8px -4px #00141e1a;--fontWeights400:400;--fontWeights500:500;--fontWeights700:700;--lineHeights300:100%;--lineHeights400:125%;--lineHeights500:150%;--fontFamiliesDefault:Sage UI;--fontFamiliesIos:San Francisco;--fontFamiliesAndroid:Roboto;--fontFamiliesOther:Open Sans;--borderRadiusCircle:50%;--typographyAccordionTitleM:500 20px/125% Sage UI;--typographyAccordionTitleS:500 16px/125% Sage UI;--typographyAccordionSubtitleM:400 14px/150% Sage UI;--typographyAccordionSubtitleS:400 14px/150% Sage UI;--typographyAccordionParagraphM:400 14px/150% Sage UI;--typographyAccordionParagraphS:400 14px/150% Sage UI;--typographyActionPopoverMenuItemM:500 14px/150% Sage UI;--typographyAnchorNavLabelM:500 14px/150% Sage UI;--typographyBadgeLabelM:500 12px/150% Sage UI;--typographyBreadcrumbSeparatorM:400 14px/150% Sage UI;--typographyBreadcrumbCurrentPageM:400 14px/150% Sage UI;--typographyButtonLabelS:500 14px/150% Sage UI;--typographyButtonLabelM:500 14px/150% Sage UI;--typographyButtonLabelL:500 16px/150% Sage UI;--typographyCardParagraphM:400 14px/150% Sage UI;--typographyCardSelectTitleM:700 16px/150% Sage UI;--typographyCardSelectSubtitleM:500 14px/150% Sage UI;--typographyCardSelectParagraphM:400 14px/150% Sage UI;--typographyCardSelectFooterM:400 14px/150% Sage UI;--typographyDatePickerCalendarDateM:500 14px/150% Sage UI;--typographyDatePickerCalendarDayM:700 14px/150% Sage UI;--typographyDatePickerCalendarMonthM:700 16px/125% Sage UI;--typographyDialogTitleXs:700 24px/125% Sage UI;--typographyDialogTitleS:700 24px/125% Sage UI;--typographyDialogTitleMs:700 24px/125% Sage UI;--typographyDialogTitleM:700 24px/125% Sage UI;--typographyDialogTitleMl:700 24px/125% Sage UI;--typographyDialogTitleL:700 24px/125% Sage UI;--typographyDialogTitleXl:700 24px/125% Sage UI;--typographyDialogTitleXxl:700 24px/125% Sage UI;--typographyDialogSubtitleM:400 16px/150% Sage UI;--typographyDialogParagraphXs:400 14px/150% Sage UI;--typographyDialogParagraphS:400 14px/150% Sage UI;--typographyDialogParagraphMs:400 14px/150% Sage UI;--typographyDialogParagraphM:400 14px/150% Sage UI;--typographyDialogParagraphMl:400 14px/150% Sage UI;--typographyDialogParagraphL:400 14px/150% Sage UI;--typographyDialogParagraphXl:400 14px/150% Sage UI;--typographyDialogParagraphXxl:400 14px/150% Sage UI;--typographyDrawerTitleM:700 22px/125% Sage UI;--typographyDrawerParagraphM:400 14px/150% Sage UI;--typographyFlashTextM:400 14px/150% Sage UI;--typographyFlashTextL:400 16px/150% Sage UI;--typographyFormFieldLabelXs:500 14px/150% Sage UI;--typographyFormFieldLabelS:500 14px/150% Sage UI;--typographyFormFieldLabelM:500 14px/150% Sage UI;--typographyFormFieldLabelL:500 16px/150% Sage UI;--typographyFormFieldHintTextXs:400 14px/150% Sage UI;--typographyFormFieldHintTextS:400 14px/150% Sage UI;--typographyFormFieldHintTextM:400 14px/150% Sage UI;--typographyFormFieldHintTextL:400 16px/150% Sage UI;--typographyFormFieldErrorMessageXs:500 14px/150% Sage UI;--typographyFormFieldErrorMessageS:500 14px/150% Sage UI;--typographyFormFieldErrorMessageM:500 14px/150% Sage UI;--typographyFormFieldErrorMessageL:500 16px/150% Sage UI;--typographyFormFieldCautionMessageXs:400 14px/150% Sage UI;--typographyFormFieldCautionMessageS:400 14px/150% Sage UI;--typographyFormFieldCautionMessageM:400 14px/150% Sage UI;--typographyFormFieldCautionMessageL:400 16px/150% Sage UI;--typographyFormFieldInputTextXs:400 14px/150% Sage UI;--typographyFormFieldInputTextS:400 14px/150% Sage UI;--typographyFormFieldInputTextM:400 14px/150% Sage UI;--typographyFormFieldInputTextL:400 16px/150% Sage UI;--typographyFormFieldDropdownOptionsXs:400 14px/150% Sage UI;--typographyFormFieldDropdownOptionsS:400 14px/150% Sage UI;--typographyFormFieldDropdownOptionsM:400 14px/150% Sage UI;--typographyFormFieldDropdownOptionsL:400 16px/150% Sage UI;--typographyFormFieldSecondLabelXs:500 14px/150% Sage UI;--typographyFormFieldSecondLabelS:500 14px/150% Sage UI;--typographyFormFieldSecondLabelM:500 14px/150% Sage UI;--typographyFormFieldSecondLabelL:500 16px/150% Sage UI;--typographyFormFieldCharacterCountXs:400 14px/150% Sage UI;--typographyFormFieldCharacterCountS:400 14px/150% Sage UI;--typographyFormFieldCharacterCountM:400 14px/150% Sage UI;--typographyFormFieldCharacterCountL:400 16px/150% Sage UI;--typographyLinkTextS:400 12px/150% Sage UI;--typographyLinkTextM:400 14px/150% Sage UI;--typographyLinkTextL:400 16px/150% Sage UI;--typographyMenuLabelM:500 14px/150% Sage UI;--typographyMenuLabelL:500 16px/150% Sage UI;--typographyMenuSegmentTitleM:500 14px/150% Sage UI;--typographyMessageHeadingM:700 14px/150% Sage UI;--typographyMessageHeadingL:700 16px/150% Sage UI;--typographyMessageTextM:400 14px/150% Sage UI;--typographyMessageTextL:400 16px/150% Sage UI;--typographyPaginationLabelM:400 13px/150% Sage UI;--typographyPillLabelS:500 10px/150% Sage UI;--typographyPillLabelM:500 12px/150% Sage UI;--typographyPillLabelL:500 14px/150% Sage UI;--typographyPillLabelXl:500 16px/150% Sage UI;--typographyProfileEmailTextS:400 14px/125% Sage UI;--typographyProfileEmailTextM:400 14px/125% Sage UI;--typographyProfileEmailTextMl:400 14px/125% Sage UI;--typographyProfileEmailTextL:400 14px/125% Sage UI;--typographyProfileEmailTextXl:400 18px/125% Sage UI;--typographyProfileEmailTextXxl:400 24px/125% Sage UI;--typographyProfileEmailLinkS:400 14px/125% Sage UI;--typographyProfileEmailLinkM:400 14px/125% Sage UI;--typographyProfileEmailLinkMl:400 14px/125% Sage UI;--typographyProfileEmailLinkL:400 14px/125% Sage UI;--typographyProfileEmailLinkXl:400 18px/125% Sage UI;--typographyProfileEmailLinkXxl:400 24px/125% Sage UI;--typographyProfileInitialsS:500 14px/150% Sage UI;--typographyProfileInitialsM:500 18px/150% Sage UI;--typographyProfileInitialsMl:500 24px/150% Sage UI;--typographyProfileInitialsL:500 32px/150% Sage UI;--typographyProfileInitialsXl:500 48px/150% Sage UI;--typographyProfileInitialsXxl:500 56px/150% Sage UI;--typographyProfileNameS:500 14px/125% Sage UI;--typographyProfileNameM:500 14px/125% Sage UI;--typographyProfileNameMl:500 16px/125% Sage UI;--typographyProfileNameL:500 20px/125% Sage UI;--typographyProfileNameXl:500 24px/125% Sage UI;--typographyProfileNameXxl:500 32px/125% Sage UI;--typographyProgressTrackerValueLabelS:500 14px/150% Sage UI;--typographyProgressTrackerValueLabelM:500 14px/150% Sage UI;--typographyProgressTrackerValueLabelL:500 16px/150% Sage UI;--typographySidebarTitleXs:700 20px/125% Sage UI;--typographySidebarTitleS:700 20px/125% Sage UI;--typographySidebarTitleMs:700 20px/125% Sage UI;--typographySidebarTitleM:700 20px/125% Sage UI;--typographySidebarTitleMl:700 20px/125% Sage UI;--typographySidebarTitleL:700 20px/125% Sage UI;--typographySidebarTitleXl:700 20px/125% Sage UI;--typographySidebarParagraphXs:400 14px/125% Sage UI;--typographySidebarParagraphS:400 14px/125% Sage UI;--typographySidebarParagraphMs:400 14px/125% Sage UI;--typographySidebarParagraphM:400 14px/125% Sage UI;--typographySidebarParagraphMl:400 14px/125% Sage UI;--typographySidebarParagraphL:400 14px/125% Sage UI;--typographySidebarParagraphXl:400 14px/125% Sage UI;--typographyStepFlowCompleteLabelM:500 14px/150% Sage UI;--typographyStepFlowCurrentLabelM:500 14px/150% Sage UI;--typographyStepFlowIncompleteLabelM:500 14px/150% Sage UI;--typographySwitchOptionLabelM:500 12px/150% Sage UI;--typographySwitchOptionLabelL:500 14px/150% Sage UI;--typographyTableHeaderTextXs:500 13px/150% Sage UI;--typographyTableHeaderTextS:500 14px/150% Sage UI;--typographyTableHeaderTextM:500 14px/150% Sage UI;--typographyTableHeaderTextL:500 16px/150% Sage UI;--typographyTableHeaderTextXl:500 16px/150% Sage UI;--typographyTableCellTextXs:400 13px/150% Sage UI;--typographyTableCellTextS:400 14px/150% Sage UI;--typographyTableCellTextM:400 14px/150% Sage UI;--typographyTableCellTextL:400 16px/150% Sage UI;--typographyTableCellTextXl:400 16px/150% Sage UI;--typographyTileParagraphM:400 14px/150% Sage UI;--typographyTooltipTextM:400 14px/150% Sage UI;--typographyTooltipTextL:400 16px/150% Sage UI;--opacity300:0.3;--opacity600:0.6;--opacity800:0.8;}
-    /* sc-component-id: sc-global-2530069054 */
-    body{color:rgba(0,0,0,0.9);font-family:"Sage UI",sans-serif;font-size:14px;margin:0px;padding:0px;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;} button,input,select,textarea{font-family:inherit;} h1,.h1{font-size:24px;font-weight:900;line-height:32px;} h2,.h2{font-size:22px;font-weight:700;margin-bottom:26px;} h3,.h3{font-size:20px;font-weight:700;margin-bottom:24px;} h4,.h4{font-size:18px;font-weight:700;margin-bottom:22px;} h5,.h5{font-size:16px;font-weight:700;margin-bottom:20px;} h6,.h6{font-size:14px;font-weight:700;margin-bottom:18px;}
-    /* sc-component-id: sc-bwzfXH */
-    .hfoRCf{height:80px;background-color:#FFFFFF;}.ghkhBS{padding:var(--spacing200);}
-    /* sc-component-id: sc-htpNat */
-    
-    /* sc-component-id: sc-bxivhb */
-    
-    /* sc-component-id: sc-ifAKCX */
-    .brxwEX{position:relative;color:var(--colorsYin090);background-color:transparent;vertical-align:middle;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;height:24px;width:24px;} .brxwEX::before{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:CarbonIcons;content:"\e915";font-style:normal;font-weight:normal;vertical-align:middle;font-size:16px;line-height:16px;display:block;}
-    /* sc-component-id: sc-EHOje */
-    
-    /* sc-component-id: sc-bZQynM */
-    
-    /* sc-component-id: sc-gzVnrw */
-    
-    /* sc-component-id: sc-htoDjs */
-    
-    /* sc-component-id: sc-dnqmqq */
-    
-    /* sc-component-id: sc-iwsKbI */
-    
-    /* sc-component-id: sc-gZMcBi */
-    .cDOVhw{color:var(--colorsUtilityYin090);display:block;font-weight:600;}
-    /* sc-component-id: sc-gqjmRU */
-    .jUkPaw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:8px;}
-    /* sc-component-id: sc-VigVT */
-    
-    /* sc-component-id: sc-jTzLTM */
-    .kiOGvy{-webkit-flex:0 0 70%;-ms-flex:0 0 70%;flex:0 0 70%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;}
-    /* sc-component-id: sc-fjdhpX */
-    .fgpoem{-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;background:var(--colorsUtilityYang100);border:1px solid var(--colorsUtilityMajor300);box-sizing:border-box;cursor:text;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%;margin:0;min-height:var(--sizing500);padding-left:var(--spacing150);padding-right:var(--spacing150);} .fgpoem input::-ms-clear{display:none;} .fgpoem input::-webkit-contacts-auto-fill-button{display:none !important;}
-    /* sc-component-id: sc-jzJRlG */
-    
-    /* sc-component-id: sc-cSHVUG */
-    
-    /* sc-component-id: sc-kAzzGY */
-    
-    /* sc-component-id: sc-chPdSV */
-    
-    /* sc-component-id: sc-kgoBCf */
-    .jgXbGG{padding-left:var(--spacing300);padding-right:var(--spacing300);margin:var(--spacing000);margin-left:var(--spacing000);-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;border-radius:0;-webkit-flex-flow:wrap;-ms-flex-flow:wrap;flex-flow:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;vertical-align:middle;outline-offset:0;border:2px solid transparent;box-sizing:border-box;font-weight:600;-webkit-text-decoration:none;text-decoration:none;background:transparent;border-color:var(--colorsActionMajor500);color:var(--colorsActionMajor500);font-size:var(--fontSizes100);min-height:40px;} .jgXbGG:focus{outline:solid 3px var(--colorsSemanticFocus500);} .jgXbGG .sc-ifAKCX{color:var(--colorsActionMajor500);} .jgXbGG .sc-chPdSV{background-color:var(--colorsActionMajor500);} .jgXbGG:hover{background:var(--colorsActionMajor600);border-color:var(--colorsActionMajorTransparent);color:var(--colorsActionMajorYang100);} .jgXbGG:hover .sc-ifAKCX{color:var(--colorsActionMajorYang100);} .jgXbGG:hover .sc-chPdSV{background-color:var(--colorsActionMajorYang100);} .jgXbGG .sc-ifAKCX{margin-left:0px;margin-right:var(--spacing100);margin-bottom:0px;height:16px;} .jgXbGG .sc-ifAKCX svg{margin-top:0;}.iJcayT{padding-left:var(--spacing300);padding-right:var(--spacing300);margin:var(--spacing000);margin-left:var(--spacing200);-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;border-radius:0;-webkit-flex-flow:wrap;-ms-flex-flow:wrap;flex-flow:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;vertical-align:middle;outline-offset:0;border:2px solid transparent;box-sizing:border-box;font-weight:600;-webkit-text-decoration:none;text-decoration:none;background:var(--colorsActionMajor500);border-color:transparent;color:var(--colorsActionMajorYang100);font-size:var(--fontSizes100);min-height:40px;} .iJcayT:focus{outline:solid 3px var(--colorsSemanticFocus500);} .iJcayT .sc-ifAKCX{color:var(--colorsActionMajorYang100);} .iJcayT .sc-chPdSV{background-color:var(--colorsActionMajorYang100);} .iJcayT:hover{background:var(--colorsActionMajor600);} .iJcayT .sc-ifAKCX{margin-left:0px;margin-right:var(--spacing100);margin-bottom:0px;height:16px;} .iJcayT .sc-ifAKCX svg{margin-top:0;}
-    /* sc-component-id: sc-kGXeez */
-    
-    /* sc-component-id: sc-kpOJdX */
-    .jgnpjX{background:transparent;border:none;color:var(--colorsUtilityYin090);-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;font-size:var(--fontSizes100);outline:none;padding:0;margin:0;width:30px;} .jgnpjX:-webkit-autofill{background-clip:text;-webkit-background-clip:text;} .jgnpjX::-webkit-input-placeholder{color:var(--colorsUtilityYin030);} .jgnpjX::-moz-placeholder{color:var(--colorsUtilityYin030);} .jgnpjX:-ms-input-placeholder{color:var(--colorsUtilityYin030);} .jgnpjX::placeholder{color:var(--colorsUtilityYin030);}
-    /* sc-component-id: sc-dxgOiQ */
-    
-    /* sc-component-id: sc-ckVGcZ */
-    .kRfIfa + .sc-ckVGcZ{margin-top:16px;}
-    /* sc-component-id: sc-jKJlTe */
-    .eMjZWG{display:block;}
-    /* sc-component-id: sc-eNQAEJ */
-    
-    /* sc-component-id: sc-hMqMXs */
-    
-    /* sc-component-id: sc-kEYyzF */
-    
-    /* sc-component-id: sc-kkGfuU */
-    
-    /* sc-component-id: sc-iAyFgw */
-    
-    /* sc-component-id: sc-hSdWYo */
-    
-    /* sc-component-id: sc-eHgmQL */
-    
-    /* sc-component-id: sc-cvbbAY */
-    .ZzQrt{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto;width:auto;padding:40px;grid-gap:40px;} @media screen and (max-width:1920px){.ZzQrt{grid-gap:24px;}} @media screen and (max-width:1259px){.ZzQrt{padding:32px;}} @media screen and (max-width:959px){.ZzQrt{grid-gap:16px;padding:24px;}} @media screen and (max-width:599px){.ZzQrt{padding:16px;}} @media screen{.ZzQrt{padding:var(--spacing000);padding-top:var(--spacing400);}}
-    /* sc-component-id: sc-jWBwVP */
-    .gOxHaP{margin:0;-webkit-align-self:stretch;-ms-flex-item-align:stretch;align-self:stretch;justify-self:left;grid-area:auto / 1 / auto / 13;grid-column:1/7;}.eEKnQS{margin:0;-webkit-align-self:stretch;-ms-flex-item-align:stretch;align-self:stretch;justify-self:right;grid-area:auto / 1 / auto / 13;grid-column:7/13;}
-    /* sc-component-id: sc-brqgnP */
-    
-    /* sc-component-id: sc-cMljjf */
-    .eNoXDr{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;box-sizing:border-box;width:100%;color:var(--colorsUtilityYin090);background-color:var(--colorsUtilityYang100);border:1px solid var(--colorsUtilityMajor100);border-left:none;border-right:none;} .eNoXDr + .sc-cMljjf{margin-top:-1px;border-top:1px solid var(--colorsUtilityMajor100);border-bottom:1px solid var(--colorsUtilityMajor100);}
-    /* sc-component-id: sc-jAaTju */
-    
-    /* sc-component-id: sc-jDwBTQ */
-    .cpXYFh{margin-top:8px;}</style><style data-styled="" data-styled-version="4.4.1">
-    /* sc-component-id: sc-gPEVay */
-    .kxcrxH{-webkit-transition:-webkit-transform 0.3s;-webkit-transition:transform 0.3s;transition:transform 0.3s;margin-right:var(--spacing000);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);color:var(--colorsActionMinor500);}
-    /* sc-component-id: sc-iRbamj */
-    .jgzPGc{display:grid;grid-template-rows:auto auto;} .jgzPGc .sc-EHOje{height:20px;position:relative;top:2px;}
-    /* sc-component-id: sc-jlyJG */
-    .cGtWjX{padding:var(--spacing300);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;cursor:pointer;z-index:1;} .cGtWjX:focus{outline:var(--borderWidth300) solid var(--colorsSemanticFocus500);} .cGtWjX:hover{background-color:var(--colorsUtilityMajor050);}
-    /* sc-component-id: sc-gipzik */
-    .gyVOsf{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;box-sizing:border-box;overflow:hidden;-webkit-transition:all 0.3s;transition:all 0.3s;max-height:0px;height:0px;visibility:hidden;}
-    /* sc-component-id: sc-csuQGl */
-    .dZOxff{padding:var(--spacing300);padding-top:0;overflow:hidden;}</style><style>@font-face {
-      font-family: "CarbonIcons";
-      src: url(http://localhost:3001/static/media/carbon-icons-webfont.b96c413eb9073b1971d2.woff) format("woff");
-      font-weight: normal;
-      font-style: normal;
-    }
-    
-    @font-face {
-      font-family: "Sage UI";
-      font-style: normal;
-      font-weight: 400;
-      src: url(http://localhost:3001/static/media/sageui-regular.521a81137fa52b534bf7.woff2)
-          format("woff2"),
-        url(http://localhost:3001/static/media/sageui-regular.762ecaf70017089de3cc.woff) format("woff"),
-        url(http://localhost:3001/static/media/sageui-regular.0870ec74f655711b404e.ttf)
-          format("truetype"),
-        url(http://localhost:3001/static/media/sageui-regular.9cd7172286556a725c83.otf)
-          format("opentype");
-    }
-    
-    @font-face {
-      font-family: "Sage UI";
-      font-style: normal;
-      font-weight: 700;
-      src: url(http://localhost:3001/static/media/sageui-medium.c39544a6b682564733f3.woff2)
-          format("woff2"),
-        url(http://localhost:3001/static/media/sageui-medium.c1601ff9cb97d3c5de26.woff) format("woff"),
-        url(http://localhost:3001/static/media/sageui-medium.bf4658b49a08e83c3248.ttf)
-          format("truetype"),
-        url(http://localhost:3001/static/media/sageui-medium.498d6ed6a70711499dd6.otf)
-          format("opentype");
-    }
-    
-    @font-face {
-      font-family: "Sage UI";
-      font-style: normal;
-      font-weight: 900;
-      src: url(http://localhost:3001/static/media/sageui-bold.3b697c649436ac60c89c.woff2)
-          format("woff2"),
-        url(http://localhost:3001/static/media/sageui-bold.080d224e5995790988eb.woff) format("woff"),
-        url(http://localhost:3001/static/media/sageui-bold.b15d79f91e7797166b5d.ttf) format("truetype"),
-        url(http://localhost:3001/static/media/sageui-bold.63ebd4ba37f8e5a15487.otf) format("opentype");
-    }
-    
-    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9jYXJib24tcmVhY3QvbGliL3N0eWxlL2ZvbnRzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDBCQUEwQjtFQUMxQiwyREFBNkQ7RUFDN0QsbUJBQW1CO0VBQ25CLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCOzs7Ozs7d0JBTXNCO0FBQ3hCOztBQUVBO0VBQ0Usc0JBQXNCO0VBQ3RCLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEI7Ozs7Ozt3QkFNc0I7QUFDeEI7O0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQjs7OzsrREFJNkU7QUFDL0UiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiQ2FyYm9uSWNvbnNcIjtcbiAgc3JjOiB1cmwoXCIuL2Fzc2V0cy9jYXJib24taWNvbnMtd2ViZm9udC53b2ZmXCIpIGZvcm1hdChcIndvZmZcIik7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbn1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcIlNhZ2UgVUlcIjtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogNDAwO1xuICBzcmM6IHVybChcIn5Ac2FnZS9kZXNpZ24tdG9rZW5zL2Fzc2V0cy9mb250cy9zYWdldWktcmVndWxhci53b2ZmMlwiKVxuICAgICAgZm9ybWF0KFwid29mZjJcIiksXG4gICAgdXJsKFwifkBzYWdlL2Rlc2lnbi10b2tlbnMvYXNzZXRzL2ZvbnRzL3NhZ2V1aS1yZWd1bGFyLndvZmZcIikgZm9ybWF0KFwid29mZlwiKSxcbiAgICB1cmwoXCJ+QHNhZ2UvZGVzaWduLXRva2Vucy9hc3NldHMvZm9udHMvc2FnZXVpLXJlZ3VsYXIudHRmXCIpXG4gICAgICBmb3JtYXQoXCJ0cnVldHlwZVwiKSxcbiAgICB1cmwoXCJ+QHNhZ2UvZGVzaWduLXRva2Vucy9hc3NldHMvZm9udHMvc2FnZXVpLXJlZ3VsYXIub3RmXCIpXG4gICAgICBmb3JtYXQoXCJvcGVudHlwZVwiKTtcbn1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcIlNhZ2UgVUlcIjtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogNzAwO1xuICBzcmM6IHVybChcIn5Ac2FnZS9kZXNpZ24tdG9rZW5zL2Fzc2V0cy9mb250cy9zYWdldWktbWVkaXVtLndvZmYyXCIpXG4gICAgICBmb3JtYXQoXCJ3b2ZmMlwiKSxcbiAgICB1cmwoXCJ+QHNhZ2UvZGVzaWduLXRva2Vucy9hc3NldHMvZm9udHMvc2FnZXVpLW1lZGl1bS53b2ZmXCIpIGZvcm1hdChcIndvZmZcIiksXG4gICAgdXJsKFwifkBzYWdlL2Rlc2lnbi10b2tlbnMvYXNzZXRzL2ZvbnRzL3NhZ2V1aS1tZWRpdW0udHRmXCIpXG4gICAgICBmb3JtYXQoXCJ0cnVldHlwZVwiKSxcbiAgICB1cmwoXCJ+QHNhZ2UvZGVzaWduLXRva2Vucy9hc3NldHMvZm9udHMvc2FnZXVpLW1lZGl1bS5vdGZcIilcbiAgICAgIGZvcm1hdChcIm9wZW50eXBlXCIpO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiU2FnZSBVSVwiO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiA5MDA7XG4gIHNyYzogdXJsKFwifkBzYWdlL2Rlc2lnbi10b2tlbnMvYXNzZXRzL2ZvbnRzL3NhZ2V1aS1ib2xkLndvZmYyXCIpXG4gICAgICBmb3JtYXQoXCJ3b2ZmMlwiKSxcbiAgICB1cmwoXCJ+QHNhZ2UvZGVzaWduLXRva2Vucy9hc3NldHMvZm9udHMvc2FnZXVpLWJvbGQud29mZlwiKSBmb3JtYXQoXCJ3b2ZmXCIpLFxuICAgIHVybChcIn5Ac2FnZS9kZXNpZ24tdG9rZW5zL2Fzc2V0cy9mb250cy9zYWdldWktYm9sZC50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIiksXG4gICAgdXJsKFwifkBzYWdlL2Rlc2lnbi10b2tlbnMvYXNzZXRzL2ZvbnRzL3NhZ2V1aS1ib2xkLm90ZlwiKSBmb3JtYXQoXCJvcGVudHlwZVwiKTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>#main-frame-container {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-    @media (min-width: 992px) {
-      #main-frame-container {
-        justify-content: center;
-        align-items: center;
-        margin: 100px 0;
-      }
-    }
-    #main-frame-container #main-frame {
-      display: flex;
-      flex-direction: column;
-      background-color: #ffffff;
-    }
-    @media (min-width: 992px) {
-      #main-frame-container #main-frame {
-        width: 750px;
-        min-height: 400px;
-        border: 1px solid rgba(0, 0, 0, 0.2196078431);
-        padding: 40px;
-      }
-    }
-    @media (max-width: 991px) {
-      #main-frame-container #main-frame {
-        padding: 24px;
-        flex-grow: 1;
-      }
-    }
-    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL21haW4tZnJhbWUvTWFpbkZyYW1lLnNjc3MiLCJ3ZWJwYWNrOi8vLi9zcmMvc2Nzcy92YXJpYWJsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLFlBQUE7QUFESjtBQUdJO0VBTEo7SUFNUSx1QkFBQTtJQUNBLG1CQUFBO0lBQ0EsZUFBQTtFQUFOO0FBQ0Y7QUFFSTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLHlCQ2ZRO0FEZWhCO0FBRVE7RUFMSjtJQU1RLFlBQUE7SUFDQSxpQkFBQTtJQUNBLDZDQUFBO0lBQ0EsYUFBQTtFQUNWO0FBQ0Y7QUFDUTtFQVpKO0lBYVEsYUFBQTtJQUNBLFlBQUE7RUFFVjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vc2Nzcy92YXJpYWJsZXMuc2Nzcyc7XG5cbiNtYWluLWZyYW1lLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGZsZXgtZ3JvdzogMTtcblxuICAgIEBtZWRpYSAobWluLXdpZHRoOiAkbWluLXdpZHRoLWRlc2t0b3ApIHtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIG1hcmdpbjogMTAwcHggMDtcbiAgICB9XG5cbiAgICAjbWFpbi1mcmFtZSB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICRwcmltYXJ5LWNvbG9yO1xuXG4gICAgICAgIEBtZWRpYSAobWluLXdpZHRoOiAkbWluLXdpZHRoLWRlc2t0b3ApIHtcbiAgICAgICAgICAgIHdpZHRoOiA3NTBweDtcbiAgICAgICAgICAgIG1pbi1oZWlnaHQ6IDQwMHB4O1xuICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgJGJvcmRlci1jb2xvcjtcbiAgICAgICAgICAgIHBhZGRpbmc6IDQwcHg7XG4gICAgICAgIH1cblxuICAgICAgICBAbWVkaWEgKG1heC13aWR0aDogJG1heC13aWR0aC10YWJsZXQpIHtcbiAgICAgICAgICAgIHBhZGRpbmc6IDI0cHg7XG4gICAgICAgICAgICBmbGV4LWdyb3c6IDE7XG4gICAgICAgIH1cbiAgICB9XG59XG4iLCIvLyBjb2xvcnNcbiRwcmltYXJ5LWNvbG9yOiAjZmZmZmZmO1xuJGJhY2tncm91bmQtY29sb3I6ICNmMWY1ZjY7XG4kYm9yZGVyLWNvbG9yOiAjMDAwMDAwMzg7XG4kdGV4dC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjkpO1xuJGVycm9yLWNvbG9yOiAjY2Y0ZDRkO1xuJHdhcm5pbmctY29sb3I6ICNkZjllMjg7XG4kYWN0aXZlLWNvbG9yOiBmb3Jlc3RncmVlbjtcblxuLy8gc2NyZWVuIHNpemVzXG4kbWluLXdpZHRoLWRlc2t0b3A6IDk5MnB4O1xuJG1pbi13aWR0aC10YWJsZXQ6IDc2OHB4O1xuJG1heC13aWR0aC10YWJsZXQ6IDk5MXB4O1xuJG1heC13aWR0aC1tb2JpbGU6IDc2N3B4O1xuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.bank-account-li {
-      list-style-type: none;
-      text-align: left;
-    }
-    
-    .hidden-back-button {
-      display: none !important;
-    }
-    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0Zvb3Rlci9Gb290ZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHFCQUFBO0VBQ0EsZ0JBQUE7QUFDSjs7QUFDQTtFQUNJLHdCQUFBO0FBRUoiLCJzb3VyY2VzQ29udGVudCI6WyIuYmFuay1hY2NvdW50LWxpIHtcbiAgICBsaXN0LXN0eWxlLXR5cGU6bm9uZTtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xufVxuLmhpZGRlbi1iYWNrLWJ1dHRvbiB7XG4gICAgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50O1xufSJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
-<body>
-
-<div class="sc-bdVaJa flCyIZ"><div id="app" class="mainframe"><div id="main-frame-container"><div id="main-frame"><div height="80px" class="sc-bwzfXH hfoRCf"> <h1 style="margin-top:0">Sage bank feeds terms and conditions</h1></div><div class="sc-brqgnP jaxTcT"><div id="Accordion_a5a382df-f361-46b1-d41b-263ea0f779b4" data-component="accordion" class="sc-cMljjf eNoXDr"><div data-element="accordion-title-container" id="AccordionHeader_a5a382df-f361-46b1-d41b-263ea0f779b4" aria-expanded="false" aria-controls="AccordionContent_a5a382df-f361-46b1-d41b-263ea0f779b4" tabindex="0" role="button" class="sc-jlyJG cGtWjX"><div data-element="accordion-headings-container" class="sc-iRbamj jgzPGc"><span class="sc-jDwBTQ cpXYFh">What Sage can do with your data</span></div><span class="sc-ifAKCX brxwEX sc-gPEVay kxcrxH" data-element="accordion-icon" font-size="small" type="chevron_down" data-component="icon"></span></div><div class="sc-gipzik gyVOsf"><div role="region" data-element="accordion-content" id="AccordionContent_a5a382df-f361-46b1-d41b-263ea0f779b4" aria-labelledby="AccordionHeader_a5a382df-f361-46b1-d41b-263ea0f779b4" class="sc-csuQGl dZOxff"><div class="sc-bwzfXH ghkhBS"><div class="sc-ckVGcZ kRfIfa"><div class="sc-jKJlTe eMjZWG"><div width="30" class="sc-gqjmRU jUkPaw"><label data-element="label" id="9d5f1eb2-718f-d630-5f82-b303aec69e49-label" for="9d5f1eb2-718f-d630-5f82-b303aec69e49" class="sc-gZMcBi cDOVhw">Textbox in an Accordion</label></div><div class="sc-jTzLTM kiOGvy"><div role="presentation" class="sc-fjdhpX fgpoem"><input type="text" aria-invalid="false" aria-describedby="" name="6ce76879-7b26-6233-3995-5a68bd523552" id="9d5f1eb2-718f-d630-5f82-b303aec69e49" data-element="input" class="sc-kpOJdX jgnpjX"/></div></div></div></div></div></div></div></div><div id="Accordion_ef777671-0d18-2241-d113-a2e583a847cf" data-component="accordion" class="sc-cMljjf eNoXDr"><div data-element="accordion-title-container" id="AccordionHeader_ef777671-0d18-2241-d113-a2e583a847cf" aria-expanded="false" aria-controls="AccordionContent_ef777671-0d18-2241-d113-a2e583a847cf" tabindex="0" role="button" class="sc-jlyJG cGtWjX"><div data-element="accordion-headings-container" class="sc-iRbamj jgzPGc"><span class="sc-jDwBTQ cpXYFh">What you&#x27;ll share with Sage</span></div><span class="sc-ifAKCX brxwEX sc-gPEVay kxcrxH" data-element="accordion-icon" font-size="small" type="chevron_down" data-component="icon"></span></div><div class="sc-gipzik gyVOsf"><div role="region" data-element="accordion-content" id="AccordionContent_ef777671-0d18-2241-d113-a2e583a847cf" aria-labelledby="AccordionHeader_ef777671-0d18-2241-d113-a2e583a847cf" class="sc-csuQGl dZOxff"><div class="sc-bwzfXH ghkhBS"><div class="sc-ckVGcZ kRfIfa"><div class="sc-jKJlTe eMjZWG"><div width="30" class="sc-gqjmRU jUkPaw"><label data-element="label" id="eae21519-d5f8-4e9f-9527-66bf295118e4-label" for="eae21519-d5f8-4e9f-9527-66bf295118e4" class="sc-gZMcBi cDOVhw">Textbox in an Accordion</label></div><div class="sc-jTzLTM kiOGvy"><div role="presentation" class="sc-fjdhpX fgpoem"><input type="text" aria-invalid="false" aria-describedby="" name="90a6edf7-3fa8-018c-bf8d-8ca1d9184e92" id="eae21519-d5f8-4e9f-9527-66bf295118e4" data-element="input" class="sc-kpOJdX jgnpjX"/></div></div></div></div></div></div></div></div><div id="Accordion_4b280a59-a0f2-3670-fa00-d3185c1c0073" data-component="accordion" class="sc-cMljjf eNoXDr"><div data-element="accordion-title-container" id="AccordionHeader_4b280a59-a0f2-3670-fa00-d3185c1c0073" aria-expanded="false" aria-controls="AccordionContent_4b280a59-a0f2-3670-fa00-d3185c1c0073" tabindex="0" role="button" class="sc-jlyJG cGtWjX"><div data-element="accordion-headings-container" class="sc-iRbamj jgzPGc"><span class="sc-jDwBTQ cpXYFh">What you&#x27;ll get from Sage</span></div><span class="sc-ifAKCX brxwEX sc-gPEVay kxcrxH" data-element="accordion-icon" font-size="small" type="chevron_down" data-component="icon"></span></div><div class="sc-gipzik gyVOsf"><div role="region" data-element="accordion-content" id="AccordionContent_4b280a59-a0f2-3670-fa00-d3185c1c0073" aria-labelledby="AccordionHeader_4b280a59-a0f2-3670-fa00-d3185c1c0073" class="sc-csuQGl dZOxff"><div class="sc-bwzfXH ghkhBS"><div>Content</div><div>Content</div><div>Content</div></div></div></div></div></div><p>By selecting <b>Continue</b> you are agreeing to Sage retrieving your data for a 90-day period. Read the Sage bank feeds <a href="">terms and conditions</a> for more information.</p><div><div data-component="grid" class="sc-cvbbAY ZzQrt"><div class="sc-jWBwVP gOxHaP"><button draggable="false" role="button" type="button" data-component="button" data-testid="undefined-btn-back" class="sc-kgoBCf jgXbGG"><span><span data-element="main-text">Back</span></span></button></div><div class="sc-jWBwVP eEKnQS"><button draggable="false" role="button" type="button" data-component="button" data-testid="undefined-btn-continue" class="sc-kgoBCf iJcayT"><span><span data-element="main-text">Continue</span></span></button></div></div></div></div></div></div></div>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="theme-color" content="#000000">
+      <!--
+         manifest.json provides metadata used when your web app is added to the
+         homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+         -->
+      <link rel="manifest" href="/manifest.json">
+      <link rel="shortcut icon" href="/favicon.ico">
+      <script type="text/javascript" src="ui.js"></script>
+      <!--
+         Notice the use of  in the tags above.
+         It will be replaced with the URL of the `public` folder during the build.
+         Only files inside the `public` folder can be referenced from the HTML.
+         
+         Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+         work correctly both with client-side routing and a non-root public URL.
+         Learn how to configure a non-root public URL by running `npm run build`.
+         -->
+      <title>React App</title>
+      <style>
+         /* These are only needed in codesandbox */
+         @font-face {
+         font-family: "Sage UI";
+         src: url(https://raw.githack.com/Sage/design-tokens/master/assets/fonts/sageui-regular.woff2)
+         format("woff2");
+         font-weight: 400;
+         font-style: normal;
+         }
+         @font-face {
+         font-family: "Sage UI";
+         src: url(https://raw.githack.com/Sage/design-tokens/master/assets/fonts/sageui-medium.woff2)
+         format("woff2");
+         font-weight: 700;
+         font-style: normal;
+         }
+         @font-face {
+         font-family: "Sage UI";
+         src: url(https://raw.githack.com/Sage/design-tokens/master/assets/fonts/sageui-bold.woff2)
+         format("woff2");
+         font-weight: 900;
+         font-style: normal;
+         }
+         @font-face {
+         font-family: "CarbonIcons";
+         src: url(https://raw.githack.com/Sage/carbon/master/src/style/assets/carbon-icons-webfont.woff)
+         format("woff");
+         font-weight: normal;
+         font-style: normal;
+         }
+      </style>
+      <script defer="" src="/static/js/bundle.js"></script>
+      <style data-styled="" data-styled-version="4.4.1">
+         /* sc-component-id: app */
+         .app{margin:0;padding:0;width:auto;display:inline;--metaName:Base Theme;--metaPublic:true;--colorsUtilityMajor100:#ccd6dbff;--colorsUtilityMajor150:#b3c2c9ff;--colorsUtilityMajor200:#99adb7ff;--colorsUtilityMajor300:#668494ff;--colorsUtilityMajor400:#335b70ff;--colorsUtilityMajor450:#19475eff;--colorsUtilityMajor500:#00324cff;--colorsUtilityMajor800:#00141eff;--colorsUtilityMajor025:#f2f5f6ff;--colorsUtilityMajor010:#fafbfbff;--colorsUtilityMajor040:#edf1f2ff;--colorsUtilityMajor050:#e6ebedff;--colorsUtilityMajor075:#d9e0e4ff;--colorsUtilityMajorTransparent:#00000000;--colorsUtilityYin030:#0000004d;--colorsUtilityYin055:#0000008c;--colorsUtilityYin065:#000000a6;--colorsUtilityYin090:#000000e6;--colorsUtilityYang100:#ffffffff;--colorsUtilityDisabled400:#f2f5f6ff;--colorsUtilityDisabled500:#e6ebedff;--colorsUtilityDisabled600:#ccd6dbff;--colorsUtilityReadOnly400:#f2f5f6ff;--colorsUtilityReadOnly500:#e6ebedff;--colorsUtilityReadOnly600:#ccd6dbff;--colorsActionMajor150:#b3d9c8ff;--colorsActionMajor350:#4da77eff;--colorsActionMajor450:#198e59ff;--colorsActionMajor500:#007e45ff;--colorsActionMajor600:#006738ff;--colorsActionMajor700:#004d2aff;--colorsActionMajor025:#f2f9f6ff;--colorsActionMajorTransparent:#00000000;--colorsActionMajorYin030:#0000004d;--colorsActionMajorYin055:#0000008c;--colorsActionMajorYin065:#000000a6;--colorsActionMajorYin090:#000000e6;--colorsActionMajorYang100:#ffffffff;--colorsActionMajorYang030:#ffffff4d;--colorsActionMinor100:#e6ebedff;--colorsActionMinor150:#d9e0e4ff;--colorsActionMinor200:#ccd6dbff;--colorsActionMinor250:#b3c2c9ff;--colorsActionMinor300:#99adb7ff;--colorsActionMinor400:#668494ff;--colorsActionMinor500:#335b70ff;--colorsActionMinor550:#19475eff;--colorsActionMinor600:#00324cff;--colorsActionMinor850:#001926ff;--colorsActionMinor900:#00141eff;--colorsActionMinor025:#fafbfbff;--colorsActionMinor050:#f2f5f6ff;--colorsActionMinorTransparent:#00000000;--colorsActionMinorYin030:#0000004d;--colorsActionMinorYin055:#0000008c;--colorsActionMinorYin065:#000000a6;--colorsActionMinorYin090:#000000e6;--colorsActionMinorYang100:#ffffffff;--colorsActionDisabled400:#f2f5f6ff;--colorsActionDisabled500:#e6ebedff;--colorsActionDisabled600:#ccd6dbff;--colorsActionReadOnly400:#f2f5f6ff;--colorsActionReadOnly500:#e6ebedff;--colorsActionReadOnly600:#ccd6dbff;--colorsSemanticNeutral200:#ccd6dbff;--colorsSemanticNeutral500:#335b70ff;--colorsSemanticNeutral600:#00324cff;--colorsSemanticNeutralTransparent:#00000000;--colorsSemanticNeutralYin030:#0000004d;--colorsSemanticNeutralYin055:#0000008c;--colorsSemanticNeutralYin065:#000000a6;--colorsSemanticNeutralYin090:#000000e6;--colorsSemanticNeutralYang100:#ffffffff;--colorsSemanticFocus250:#ffda80ff;--colorsSemanticFocus500:#ffb500ff;--colorsSemanticFocusTransparent:#00000000;--colorsSemanticPositive500:#008a21ff;--colorsSemanticPositive600:#006e1aff;--colorsSemanticPositiveTransparent:#00000000;--colorsSemanticPositiveYin030:#0000004d;--colorsSemanticPositiveYin055:#0000008c;--colorsSemanticPositiveYin065:#000000a6;--colorsSemanticPositiveYin090:#000000e6;--colorsSemanticPositiveYang100:#ffffffff;--colorsSemanticNegative350:#db7380ff;--colorsSemanticNegative450:#d04b5cff;--colorsSemanticNegative500:#cb374aff;--colorsSemanticNegative600:#a22c3bff;--colorsSemanticNegativeTransparent:#00000000;--colorsSemanticNegativeYin030:#0000004d;--colorsSemanticNegativeYin055:#0000008c;--colorsSemanticNegativeYin065:#000000a6;--colorsSemanticNegativeYin090:#000000e6;--colorsSemanticNegativeYang100:#ffffffff;--colorsSemanticCaution400:#f28533ff;--colorsSemanticCaution500:#ef6700ff;--colorsSemanticCaution600:#bf5200ff;--colorsSemanticCaution650:#a74800ff;--colorsSemanticCautionTransparent:#00000000;--colorsSemanticCautionYin030:#0000004d;--colorsSemanticCautionYin055:#0000008c;--colorsSemanticCautionYin065:#000000a6;--colorsSemanticCautionYin090:#000000e6;--colorsSemanticCautionYang100:#ffffffff;--colorsSemanticInfo150:#b3cfe5ff;--colorsSemanticInfo500:#0060a7ff;--colorsSemanticInfo600:#004d86ff;--colorsSemanticInfoTransparent:#00000000;--colorsSemanticInfoYin030:#0000004d;--colorsSemanticInfoYin055:#0000008c;--colorsSemanticInfoYin065:#000000a6;--colorsSemanticInfoYin090:#000000e6;--colorsSemanticInfoYang100:#ffffffff;--colorsLogo:#00d639ff;--colorsTransparent:#00000000;--colorsYin030:#0000004d;--colorsYin055:#0000008c;--colorsYin065:#000000a6;--colorsYin075:#000000bf;--colorsYin090:#000000e6;--colorsYang100:#ffffffff;--colorsYang030:#ffffff4d;--colorsYang080:#ffffffcc;--colorsGray600:#666666ff;--colorsGray700:#4d4d4dff;--colorsGray750:#404040ff;--colorsGray850:#262626ff;--colorsGray900:#191919ff;--colorsGray1000:#000000ff;--colorsGray000:#ffffffff;--colorsDisabled400:#f2f5f6ff;--colorsDisabled500:#e6ebedff;--colorsDisabled600:#ccd6dbff;--colorsReadOnly400:#f2f5f6ff;--colorsReadOnly500:#e6ebedff;--colorsReadOnly600:#ccd6dbff;--colorsComponentsMenuSpringStandard500:#e6ebedff;--colorsComponentsMenuSpringStandard600:#007e45ff;--colorsComponentsMenuSpringStandard700:#d9e0e4ff;--colorsComponentsMenuSpringParent500:#e6ebedff;--colorsComponentsMenuSpringParent600:#007e45ff;--colorsComponentsMenuSpringParent700:#d9e0e4ff;--colorsComponentsMenuSpringChild400:#ccd6dbff;--colorsComponentsMenuSpringChild500:#ffffffff;--colorsComponentsMenuSpringChild600:#007e45ff;--colorsComponentsMenuSpringChildAlt400:#ccd6dbff;--colorsComponentsMenuSpringChildAlt500:#e6ebedff;--colorsComponentsMenuSpringChildAlt600:#007e45ff;--colorsComponentsMenuSummerStandard400:#ccd6dbff;--colorsComponentsMenuSummerStandard500:#ffffffff;--colorsComponentsMenuSummerStandard600:#007e45ff;--colorsComponentsMenuSummerStandard700:#e6ebedff;--colorsComponentsMenuSummerStandard800:#e6ebedff;--colorsComponentsMenuSummerParent400:#ccd6dbff;--colorsComponentsMenuSummerParent500:#ffffffff;--colorsComponentsMenuSummerParent600:#007e45ff;--colorsComponentsMenuSummerParent700:#e6ebedff;--colorsComponentsMenuSummerParent800:#e6ebedff;--colorsComponentsMenuSummerChild300:#b3c2c9ff;--colorsComponentsMenuSummerChild400:#ccd6dbff;--colorsComponentsMenuSummerChild500:#e6ebedff;--colorsComponentsMenuSummerChild600:#007e45ff;--colorsComponentsMenuSummerChild700:#e6ebedff;--colorsComponentsMenuSummerChild800:#e6ebedff;--colorsComponentsMenuSummerChildAlt300:#b3c2c9ff;--colorsComponentsMenuSummerChildAlt400:#ccd6dbff;--colorsComponentsMenuSummerChildAlt500:#d9e0e4ff;--colorsComponentsMenuSummerChildAlt600:#007e45ff;--colorsComponentsMenuSummerChildAlt700:#d9e0e4ff;--colorsComponentsMenuSummerChildAlt800:#d9e0e4ff;--colorsComponentsMenuAutumnStandard500:#00324cff;--colorsComponentsMenuAutumnStandard600:#007e45ff;--colorsComponentsMenuAutumnStandard700:#19475eff;--colorsComponentsMenuAutumnParent500:#00324cff;--colorsComponentsMenuAutumnParent600:#007e45ff;--colorsComponentsMenuAutumnParent700:#19475eff;--colorsComponentsMenuAutumnChild400:#19475eff;--colorsComponentsMenuAutumnChild500:#001926ff;--colorsComponentsMenuAutumnChild600:#007e45ff;--colorsComponentsMenuAutumnChildAlt400:#19475eff;--colorsComponentsMenuAutumnChildAlt500:#00324cff;--colorsComponentsMenuAutumnChildAlt600:#007e45ff;--colorsComponentsMenuWinterStandard400:#4d4d4dff;--colorsComponentsMenuWinterStandard500:#000000ff;--colorsComponentsMenuWinterStandard600:#007e45ff;--colorsComponentsMenuWinterStandard700:#262626ff;--colorsComponentsMenuWinterStandard800:#262626ff;--colorsComponentsMenuWinterParent400:#4d4d4dff;--colorsComponentsMenuWinterParent500:#000000ff;--colorsComponentsMenuWinterParent600:#007e45ff;--colorsComponentsMenuWinterParent700:#262626ff;--colorsComponentsMenuWinterParent800:#262626ff;--colorsComponentsMenuWinterChild300:#666666ff;--colorsComponentsMenuWinterChild400:#4d4d4dff;--colorsComponentsMenuWinterChild500:#262626ff;--colorsComponentsMenuWinterChild600:#007e45ff;--colorsComponentsMenuWinterChild700:#262626ff;--colorsComponentsMenuWinterChild800:#262626ff;--colorsComponentsMenuWinterChildAlt300:#666666ff;--colorsComponentsMenuWinterChildAlt400:#4d4d4dff;--colorsComponentsMenuWinterChildAlt500:#404040ff;--colorsComponentsMenuWinterChildAlt600:#007e45ff;--colorsComponentsMenuWinterChildAlt700:#404040ff;--colorsComponentsMenuWinterChildAlt800:#404040ff;--colorsComponentsMenuYin100:#000000ff;--colorsComponentsMenuYin065:#000000a6;--colorsComponentsMenuYin090:#000000e6;--colorsComponentsMenuYang100:#ffffffff;--colorsComponentsMenuYang080:#ffffffcc;--colorsComponentsMenuTransparent:#00000000;--sizing100:8px;--sizing125:10px;--sizing150:12px;--sizing175:14px;--sizing200:16px;--sizing250:20px;--sizing275:22px;--sizing300:24px;--sizing350:28px;--sizing375:30px;--sizing400:32px;--sizing450:36px;--sizing500:40px;--sizing525:42px;--sizing600:48px;--sizing700:56px;--sizing800:64px;--sizing900:72px;--sizing1000:80px;--sizing1200:96px;--sizing1300:104px;--sizing1600:128px;--sizing010:1px;--sizing025:2px;--sizing050:4px;--sizing075:6px;--sizingLogowidth:40px;--spacing100:8px;--spacing110:9px;--spacing125:10px;--spacing150:12px;--spacing200:16px;--spacing250:20px;--spacing300:24px;--spacing400:32px;--spacing500:40px;--spacing600:48px;--spacing700:56px;--spacing800:64px;--spacing900:72px;--spacing1000:80px;--spacing000:0;--spacing010:1px;--spacing025:2px;--spacing050:4px;--spacing060:5px;--spacing075:6px;--spacingNeg010:-1px;--spacingNeg025:-2px;--spacingNeg050:-4px;--spacingNeg075:-6px;--borderWidth100:1px;--borderWidth200:2px;--borderWidth300:3px;--borderWidth400:4px;--borderWidth000:0px;--fontSizes100:14px;--fontSizes200:16px;--fontSizes300:18px;--fontSizes400:20px;--fontSizes500:22px;--fontSizes600:24px;--fontSizes700:32px;--fontSizes800:40px;--fontSizes900:48px;--fontSizes1000:56px;--fontSizes010:10px;--fontSizes025:12px;--fontSizes050:13px;--boxShadow100:0 5px 5px 0 #00141e33,0 10px 10px 0 #00141e1a;--boxShadow150:0 -4px 12px 0 #00141e0d;--boxShadow200:0 10px 20px 0 #00141e33,0 20px 40px 0 #00141e1a;--boxShadow300:0 10px 30px 0 #00141e1a,0 30px 60px 0 #00141e1a;--boxShadow400:0 10px 40px 0 #00141e0a,0 50px 80px 0 #00141e1a;--boxShadow010:inset 0 -1px 0 0 #e6ebedff;--boxShadow050:0 3px 3px 0 #00141e33,0 2px 4px 0 #00141e26;--boxShadow075:inset 0 6px 4px -4px #00141e0d;--boxShadow090:0 4px 8px -4px #00141e1a;--boxShadow091:4px 0 8px -4px #00141e1a;--fontWeights400:400;--fontWeights500:500;--fontWeights700:700;--lineHeights300:100%;--lineHeights400:125%;--lineHeights500:150%;--fontFamiliesDefault:Sage UI;--fontFamiliesIos:San Francisco;--fontFamiliesAndroid:Roboto;--fontFamiliesOther:Open Sans;--borderRadiusCircle:50%;--typographyAccordionTitleM:500 20px/125% Sage UI;--typographyAccordionTitleS:500 16px/125% Sage UI;--typographyAccordionSubtitleM:400 14px/150% Sage UI;--typographyAccordionSubtitleS:400 14px/150% Sage UI;--typographyAccordionParagraphM:400 14px/150% Sage UI;--typographyAccordionParagraphS:400 14px/150% Sage UI;--typographyActionPopoverMenuItemM:500 14px/150% Sage UI;--typographyAnchorNavLabelM:500 14px/150% Sage UI;--typographyBadgeLabelM:500 12px/150% Sage UI;--typographyBreadcrumbSeparatorM:400 14px/150% Sage UI;--typographyBreadcrumbCurrentPageM:400 14px/150% Sage UI;--typographyButtonLabelS:500 14px/150% Sage UI;--typographyButtonLabelM:500 14px/150% Sage UI;--typographyButtonLabelL:500 16px/150% Sage UI;--typographyCardParagraphM:400 14px/150% Sage UI;--typographyCardSelectTitleM:700 16px/150% Sage UI;--typographyCardSelectSubtitleM:500 14px/150% Sage UI;--typographyCardSelectParagraphM:400 14px/150% Sage UI;--typographyCardSelectFooterM:400 14px/150% Sage UI;--typographyDatePickerCalendarDateM:500 14px/150% Sage UI;--typographyDatePickerCalendarDayM:700 14px/150% Sage UI;--typographyDatePickerCalendarMonthM:700 16px/125% Sage UI;--typographyDialogTitleXs:700 24px/125% Sage UI;--typographyDialogTitleS:700 24px/125% Sage UI;--typographyDialogTitleMs:700 24px/125% Sage UI;--typographyDialogTitleM:700 24px/125% Sage UI;--typographyDialogTitleMl:700 24px/125% Sage UI;--typographyDialogTitleL:700 24px/125% Sage UI;--typographyDialogTitleXl:700 24px/125% Sage UI;--typographyDialogTitleXxl:700 24px/125% Sage UI;--typographyDialogSubtitleM:400 16px/150% Sage UI;--typographyDialogParagraphXs:400 14px/150% Sage UI;--typographyDialogParagraphS:400 14px/150% Sage UI;--typographyDialogParagraphMs:400 14px/150% Sage UI;--typographyDialogParagraphM:400 14px/150% Sage UI;--typographyDialogParagraphMl:400 14px/150% Sage UI;--typographyDialogParagraphL:400 14px/150% Sage UI;--typographyDialogParagraphXl:400 14px/150% Sage UI;--typographyDialogParagraphXxl:400 14px/150% Sage UI;--typographyDrawerTitleM:700 22px/125% Sage UI;--typographyDrawerParagraphM:400 14px/150% Sage UI;--typographyFlashTextM:400 14px/150% Sage UI;--typographyFlashTextL:400 16px/150% Sage UI;--typographyFormFieldLabelXs:500 14px/150% Sage UI;--typographyFormFieldLabelS:500 14px/150% Sage UI;--typographyFormFieldLabelM:500 14px/150% Sage UI;--typographyFormFieldLabelL:500 16px/150% Sage UI;--typographyFormFieldHintTextXs:400 14px/150% Sage UI;--typographyFormFieldHintTextS:400 14px/150% Sage UI;--typographyFormFieldHintTextM:400 14px/150% Sage UI;--typographyFormFieldHintTextL:400 16px/150% Sage UI;--typographyFormFieldErrorMessageXs:500 14px/150% Sage UI;--typographyFormFieldErrorMessageS:500 14px/150% Sage UI;--typographyFormFieldErrorMessageM:500 14px/150% Sage UI;--typographyFormFieldErrorMessageL:500 16px/150% Sage UI;--typographyFormFieldCautionMessageXs:400 14px/150% Sage UI;--typographyFormFieldCautionMessageS:400 14px/150% Sage UI;--typographyFormFieldCautionMessageM:400 14px/150% Sage UI;--typographyFormFieldCautionMessageL:400 16px/150% Sage UI;--typographyFormFieldInputTextXs:400 14px/150% Sage UI;--typographyFormFieldInputTextS:400 14px/150% Sage UI;--typographyFormFieldInputTextM:400 14px/150% Sage UI;--typographyFormFieldInputTextL:400 16px/150% Sage UI;--typographyFormFieldDropdownOptionsXs:400 14px/150% Sage UI;--typographyFormFieldDropdownOptionsS:400 14px/150% Sage UI;--typographyFormFieldDropdownOptionsM:400 14px/150% Sage UI;--typographyFormFieldDropdownOptionsL:400 16px/150% Sage UI;--typographyFormFieldSecondLabelXs:500 14px/150% Sage UI;--typographyFormFieldSecondLabelS:500 14px/150% Sage UI;--typographyFormFieldSecondLabelM:500 14px/150% Sage UI;--typographyFormFieldSecondLabelL:500 16px/150% Sage UI;--typographyFormFieldCharacterCountXs:400 14px/150% Sage UI;--typographyFormFieldCharacterCountS:400 14px/150% Sage UI;--typographyFormFieldCharacterCountM:400 14px/150% Sage UI;--typographyFormFieldCharacterCountL:400 16px/150% Sage UI;--typographyLinkTextS:400 12px/150% Sage UI;--typographyLinkTextM:400 14px/150% Sage UI;--typographyLinkTextL:400 16px/150% Sage UI;--typographyMenuLabelM:500 14px/150% Sage UI;--typographyMenuLabelL:500 16px/150% Sage UI;--typographyMenuSegmentTitleM:500 14px/150% Sage UI;--typographyMessageHeadingM:700 14px/150% Sage UI;--typographyMessageHeadingL:700 16px/150% Sage UI;--typographyMessageTextM:400 14px/150% Sage UI;--typographyMessageTextL:400 16px/150% Sage UI;--typographyPaginationLabelM:400 13px/150% Sage UI;--typographyPillLabelS:500 10px/150% Sage UI;--typographyPillLabelM:500 12px/150% Sage UI;--typographyPillLabelL:500 14px/150% Sage UI;--typographyPillLabelXl:500 16px/150% Sage UI;--typographyProfileEmailTextS:400 14px/125% Sage UI;--typographyProfileEmailTextM:400 14px/125% Sage UI;--typographyProfileEmailTextMl:400 14px/125% Sage UI;--typographyProfileEmailTextL:400 14px/125% Sage UI;--typographyProfileEmailTextXl:400 18px/125% Sage UI;--typographyProfileEmailTextXxl:400 24px/125% Sage UI;--typographyProfileEmailLinkS:400 14px/125% Sage UI;--typographyProfileEmailLinkM:400 14px/125% Sage UI;--typographyProfileEmailLinkMl:400 14px/125% Sage UI;--typographyProfileEmailLinkL:400 14px/125% Sage UI;--typographyProfileEmailLinkXl:400 18px/125% Sage UI;--typographyProfileEmailLinkXxl:400 24px/125% Sage UI;--typographyProfileInitialsS:500 14px/150% Sage UI;--typographyProfileInitialsM:500 18px/150% Sage UI;--typographyProfileInitialsMl:500 24px/150% Sage UI;--typographyProfileInitialsL:500 32px/150% Sage UI;--typographyProfileInitialsXl:500 48px/150% Sage UI;--typographyProfileInitialsXxl:500 56px/150% Sage UI;--typographyProfileNameS:500 14px/125% Sage UI;--typographyProfileNameM:500 14px/125% Sage UI;--typographyProfileNameMl:500 16px/125% Sage UI;--typographyProfileNameL:500 20px/125% Sage UI;--typographyProfileNameXl:500 24px/125% Sage UI;--typographyProfileNameXxl:500 32px/125% Sage UI;--typographyProgressTrackerValueLabelS:500 14px/150% Sage UI;--typographyProgressTrackerValueLabelM:500 14px/150% Sage UI;--typographyProgressTrackerValueLabelL:500 16px/150% Sage UI;--typographySidebarTitleXs:700 20px/125% Sage UI;--typographySidebarTitleS:700 20px/125% Sage UI;--typographySidebarTitleMs:700 20px/125% Sage UI;--typographySidebarTitleM:700 20px/125% Sage UI;--typographySidebarTitleMl:700 20px/125% Sage UI;--typographySidebarTitleL:700 20px/125% Sage UI;--typographySidebarTitleXl:700 20px/125% Sage UI;--typographySidebarParagraphXs:400 14px/125% Sage UI;--typographySidebarParagraphS:400 14px/125% Sage UI;--typographySidebarParagraphMs:400 14px/125% Sage UI;--typographySidebarParagraphM:400 14px/125% Sage UI;--typographySidebarParagraphMl:400 14px/125% Sage UI;--typographySidebarParagraphL:400 14px/125% Sage UI;--typographySidebarParagraphXl:400 14px/125% Sage UI;--typographyStepFlowCompleteLabelM:500 14px/150% Sage UI;--typographyStepFlowCurrentLabelM:500 14px/150% Sage UI;--typographyStepFlowIncompleteLabelM:500 14px/150% Sage UI;--typographySwitchOptionLabelM:500 12px/150% Sage UI;--typographySwitchOptionLabelL:500 14px/150% Sage UI;--typographyTableHeaderTextXs:500 13px/150% Sage UI;--typographyTableHeaderTextS:500 14px/150% Sage UI;--typographyTableHeaderTextM:500 14px/150% Sage UI;--typographyTableHeaderTextL:500 16px/150% Sage UI;--typographyTableHeaderTextXl:500 16px/150% Sage UI;--typographyTableCellTextXs:400 13px/150% Sage UI;--typographyTableCellTextS:400 14px/150% Sage UI;--typographyTableCellTextM:400 14px/150% Sage UI;--typographyTableCellTextL:400 16px/150% Sage UI;--typographyTableCellTextXl:400 16px/150% Sage UI;--typographyTileParagraphM:400 14px/150% Sage UI;--typographyTooltipTextM:400 14px/150% Sage UI;--typographyTooltipTextL:400 16px/150% Sage UI;--opacity300:0.3;--opacity600:0.6;--opacity800:0.8;}
+         /* sc-component-id: sc-global-2530069054 */
+         body{color:rgba(0,0,0,0.9);font-family:"Sage UI",sans-serif;font-size:14px;margin:0px;padding:0px;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;} button,input,select,textarea{font-family:inherit;} h1,.h1{font-size:24px;font-weight:900;line-height:32px;} h2,.h2{font-size:22px;font-weight:700;margin-bottom:26px;} h3,.h3{font-size:20px;font-weight:700;margin-bottom:24px;} h4,.h4{font-size:18px;font-weight:700;margin-bottom:22px;} h5,.h5{font-size:16px;font-weight:700;margin-bottom:20px;} h6,.h6{font-size:14px;font-weight:700;margin-bottom:18px;}
+         /* sc-component-id: box */
+         .box{height:80px;background-color:#FFFFFF;}.ghkhBS{padding:var(--spacing200);}
+         /* sc-component-id: sc-htpNat */
+         /* sc-component-id: sc-bxivhb */
+         /* sc-component-id: sc-ifAKCX */
+         .brxwEX{position:relative;color:var(--colorsYin090);background-color:transparent;vertical-align:middle;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;height:24px;width:24px;} .brxwEX::before{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:CarbonIcons;content:"\e915";font-style:normal;font-weight:normal;vertical-align:middle;font-size:16px;line-height:16px;display:block;}
+         /* sc-component-id: sc-EHOje */
+         /* sc-component-id: sc-bZQynM */
+         /* sc-component-id: sc-gzVnrw */
+         /* sc-component-id: sc-htoDjs */
+         /* sc-component-id: sc-dnqmqq */
+         /* sc-component-id: sc-iwsKbI */
+         /* sc-component-id: sc-gZMcBi */
+         .cDOVhw{color:var(--colorsUtilityYin090);display:block;font-weight:600;}
+         /* sc-component-id: sc-gqjmRU */
+         .jUkPaw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:8px;}
+         /* sc-component-id: sc-VigVT */
+         /* sc-component-id: sc-jTzLTM */
+         .kiOGvy{-webkit-flex:0 0 70%;-ms-flex:0 0 70%;flex:0 0 70%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;}
+         /* sc-component-id: sc-fjdhpX */
+         .fgpoem{-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;background:var(--colorsUtilityYang100);border:1px solid var(--colorsUtilityMajor300);box-sizing:border-box;cursor:text;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%;margin:0;min-height:var(--sizing500);padding-left:var(--spacing150);padding-right:var(--spacing150);} .fgpoem input::-ms-clear{display:none;} .fgpoem input::-webkit-contacts-auto-fill-button{display:none !important;}
+         /* sc-component-id: sc-jzJRlG */
+         /* sc-component-id: sc-cSHVUG */
+         /* sc-component-id: sc-kAzzGY */
+         /* sc-component-id: sc-chPdSV */
+         /* sc-component-id: sc-kgoBCf */
+         .jgXbGG{padding-left:var(--spacing300);padding-right:var(--spacing300);margin:var(--spacing000);margin-left:var(--spacing000);-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;border-radius:0;-webkit-flex-flow:wrap;-ms-flex-flow:wrap;flex-flow:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;vertical-align:middle;outline-offset:0;border:2px solid transparent;box-sizing:border-box;font-weight:600;-webkit-text-decoration:none;text-decoration:none;background:transparent;border-color:var(--colorsActionMajor500);color:var(--colorsActionMajor500);font-size:var(--fontSizes100);min-height:40px;} .jgXbGG:focus{outline:solid 3px var(--colorsSemanticFocus500);} .jgXbGG .sc-ifAKCX{color:var(--colorsActionMajor500);} .jgXbGG .sc-chPdSV{background-color:var(--colorsActionMajor500);} .jgXbGG:hover{background:var(--colorsActionMajor600);border-color:var(--colorsActionMajorTransparent);color:var(--colorsActionMajorYang100);} .jgXbGG:hover .sc-ifAKCX{color:var(--colorsActionMajorYang100);} .jgXbGG:hover .sc-chPdSV{background-color:var(--colorsActionMajorYang100);} .jgXbGG .sc-ifAKCX{margin-left:0px;margin-right:var(--spacing100);margin-bottom:0px;height:16px;} .jgXbGG .sc-ifAKCX svg{margin-top:0;}.iJcayT{padding-left:var(--spacing300);padding-right:var(--spacing300);margin:var(--spacing000);margin-left:var(--spacing200);-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;border-radius:0;-webkit-flex-flow:wrap;-ms-flex-flow:wrap;flex-flow:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;vertical-align:middle;outline-offset:0;border:2px solid transparent;box-sizing:border-box;font-weight:600;-webkit-text-decoration:none;text-decoration:none;background:var(--colorsActionMajor500);border-color:transparent;color:var(--colorsActionMajorYang100);font-size:var(--fontSizes100);min-height:40px;} .iJcayT:focus{outline:solid 3px var(--colorsSemanticFocus500);} .iJcayT .sc-ifAKCX{color:var(--colorsActionMajorYang100);} .iJcayT .sc-chPdSV{background-color:var(--colorsActionMajorYang100);} .iJcayT:hover{background:var(--colorsActionMajor600);} .iJcayT .sc-ifAKCX{margin-left:0px;margin-right:var(--spacing100);margin-bottom:0px;height:16px;} .iJcayT .sc-ifAKCX svg{margin-top:0;}
+         /* sc-component-id: sc-kGXeez */
+         /* sc-component-id: sc-kpOJdX */
+         .jgnpjX{background:transparent;border:none;color:var(--colorsUtilityYin090);-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;font-size:var(--fontSizes100);outline:none;padding:0;margin:0;width:30px;} .jgnpjX:-webkit-autofill{background-clip:text;-webkit-background-clip:text;} .jgnpjX::-webkit-input-placeholder{color:var(--colorsUtilityYin030);} .jgnpjX::-moz-placeholder{color:var(--colorsUtilityYin030);} .jgnpjX:-ms-input-placeholder{color:var(--colorsUtilityYin030);} .jgnpjX::placeholder{color:var(--colorsUtilityYin030);}
+         /* sc-component-id: sc-dxgOiQ */
+         /* sc-component-id: sc-ckVGcZ */
+         .kRfIfa + .sc-ckVGcZ{margin-top:16px;}
+         /* sc-component-id: sc-jKJlTe */
+         .eMjZWG{display:block;}
+         /* sc-component-id: sc-eNQAEJ */
+         /* sc-component-id: sc-hMqMXs */
+         /* sc-component-id: sc-kEYyzF */
+         /* sc-component-id: sc-kkGfuU */
+         /* sc-component-id: sc-iAyFgw */
+         /* sc-component-id: sc-hSdWYo */
+         /* sc-component-id: sc-eHgmQL */
+         /* sc-component-id: sc-cvbbAY */
+         .ZzQrt{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto;width:auto;padding:40px;grid-gap:40px;} @media screen and (max-width:1920px){.ZzQrt{grid-gap:24px;}} @media screen and (max-width:1259px){.ZzQrt{padding:32px;}} @media screen and (max-width:959px){.ZzQrt{grid-gap:16px;padding:24px;}} @media screen and (max-width:599px){.ZzQrt{padding:16px;}} @media screen{.ZzQrt{padding:var(--spacing000);padding-top:var(--spacing400);}}
+         /* sc-component-id: sc-jWBwVP */
+         .gOxHaP{margin:0;-webkit-align-self:stretch;-ms-flex-item-align:stretch;align-self:stretch;justify-self:left;grid-area:auto / 1 / auto / 13;grid-column:1/7;}.eEKnQS{margin:0;-webkit-align-self:stretch;-ms-flex-item-align:stretch;align-self:stretch;justify-self:right;grid-area:auto / 1 / auto / 13;grid-column:7/13;}
+         /* sc-component-id: sc-brqgnP */
+         /* sc-component-id: accordion */
+         .accordion{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;box-sizing:border-box;width:100%;color:var(--colorsUtilityYin090);background-color:var(--colorsUtilityYang100);border:1px solid var(--colorsUtilityMajor100);border-left:none;border-right:none;} .accordion + .sc-cMljjf{margin-top:-1px;border-top:1px solid var(--colorsUtilityMajor100);border-bottom:1px solid var(--colorsUtilityMajor100);}
+         /* sc-component-id: sc-jAaTju */
+         /* sc-component-id: sc-jDwBTQ */
+         .cpXYFh{margin-top:8px;}
+      </style>
+      <style data-styled="" data-styled-version="4.4.1">
+         /* sc-component-id: sc-gPEVay */
+         .kxcrxH{-webkit-transition:-webkit-transform 0.3s;-webkit-transition:transform 0.3s;transition:transform 0.3s;margin-right:var(--spacing000);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);color:var(--colorsActionMinor500);}
+         /* sc-component-id: sc-iRbamj */
+         .jgzPGc{display:grid;grid-template-rows:auto auto;} .jgzPGc .sc-EHOje{height:20px;position:relative;top:2px;}
+         /* sc-component-id: sc-jlyJG */
+         .cGtWjX{padding:var(--spacing300);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;cursor:pointer;z-index:1;} .cGtWjX:focus{outline:var(--borderWidth300) solid var(--colorsSemanticFocus500);} .cGtWjX:hover{background-color:var(--colorsUtilityMajor050);}
+         /* sc-component-id: accordionContentContainer */
+         .closed{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;box-sizing:border-box;overflow:hidden;-webkit-transition:all 0.3s;transition:all 0.3s;max-height:0px;height:0px;visibility:hidden;}
+         .open {
+         -webkit-box-flex: 1;
+         -webkit-flex-grow: 1;
+         -ms-flex-positive: 1;
+         flex-grow: 1;
+         box-sizing: border-box;
+         overflow: hidden;
+         -webkit-transition: all 0.3s;
+         transition: all 0.3s;
+         max-height: 121px;
+         height: 121px;
+         }
+         /* sc-component-id: sc-csuQGl */
+         .dZOxff{padding:var(--spacing300);padding-top:0;overflow:hidden;}
+      </style>
+      <style>@font-face {
+         font-family: "CarbonIcons";
+         src: url(http://localhost:3001/static/media/carbon-icons-webfont.b96c413eb9073b1971d2.woff) format("woff");
+         font-weight: normal;
+         font-style: normal;
+         }
+         @font-face {
+         font-family: "Sage UI";
+         font-style: normal;
+         font-weight: 400;
+         src: url(http://localhost:3001/static/media/sageui-regular.521a81137fa52b534bf7.woff2)
+         format("woff2"),
+         url(http://localhost:3001/static/media/sageui-regular.762ecaf70017089de3cc.woff) format("woff"),
+         url(http://localhost:3001/static/media/sageui-regular.0870ec74f655711b404e.ttf)
+         format("truetype"),
+         url(http://localhost:3001/static/media/sageui-regular.9cd7172286556a725c83.otf)
+         format("opentype");
+         }
+         @font-face {
+         font-family: "Sage UI";
+         font-style: normal;
+         font-weight: 700;
+         src: url(http://localhost:3001/static/media/sageui-medium.c39544a6b682564733f3.woff2)
+         format("woff2"),
+         url(http://localhost:3001/static/media/sageui-medium.c1601ff9cb97d3c5de26.woff) format("woff"),
+         url(http://localhost:3001/static/media/sageui-medium.bf4658b49a08e83c3248.ttf)
+         format("truetype"),
+         url(http://localhost:3001/static/media/sageui-medium.498d6ed6a70711499dd6.otf)
+         format("opentype");
+         }
+         @font-face {
+         font-family: "Sage UI";
+         font-style: normal;
+         font-weight: 900;
+         src: url(http://localhost:3001/static/media/sageui-bold.3b697c649436ac60c89c.woff2)
+         format("woff2"),
+         url(http://localhost:3001/static/media/sageui-bold.080d224e5995790988eb.woff) format("woff"),
+         url(http://localhost:3001/static/media/sageui-bold.b15d79f91e7797166b5d.ttf) format("truetype"),
+         url(http://localhost:3001/static/media/sageui-bold.63ebd4ba37f8e5a15487.otf) format("opentype");
+         }
+         /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9jYXJib24tcmVhY3QvbGliL3N0eWxlL2ZvbnRzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDBCQUEwQjtFQUMxQiwyREFBNkQ7RUFDN0QsbUJBQW1CO0VBQ25CLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCOzs7Ozs7d0JBTXNCO0FBQ3hCOztBQUVBO0VBQ0Usc0JBQXNCO0VBQ3RCLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEI7Ozs7Ozt3QkFNc0I7QUFDeEI7O0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQjs7OzsrREFJNkU7QUFDL0UiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiQ2FyYm9uSWNvbnNcIjtcbiAgc3JjOiB1cmwoXCIuL2Fzc2V0cy9jYXJib24taWNvbnMtd2ViZm9udC53b2ZmXCIpIGZvcm1hdChcIndvZmZcIik7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbn1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcIlNhZ2UgVUlcIjtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogNDAwO1xuICBzcmM6IHVybChcIn5Ac2FnZS9kZXNpZ24tdG9rZW5zL2Fzc2V0cy9mb250cy9zYWdldWktcmVndWxhci53b2ZmMlwiKVxuICAgICAgZm9ybWF0KFwid29mZjJcIiksXG4gICAgdXJsKFwifkBzYWdlL2Rlc2lnbi10b2tlbnMvYXNzZXRzL2ZvbnRzL3NhZ2V1aS1yZWd1bGFyLndvZmZcIikgZm9ybWF0KFwid29mZlwiKSxcbiAgICB1cmwoXCJ+QHNhZ2UvZGVzaWduLXRva2Vucy9hc3NldHMvZm9udHMvc2FnZXVpLXJlZ3VsYXIudHRmXCIpXG4gICAgICBmb3JtYXQoXCJ0cnVldHlwZVwiKSxcbiAgICB1cmwoXCJ+QHNhZ2UvZGVzaWduLXRva2Vucy9hc3NldHMvZm9udHMvc2FnZXVpLXJlZ3VsYXIub3RmXCIpXG4gICAgICBmb3JtYXQoXCJvcGVudHlwZVwiKTtcbn1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcIlNhZ2UgVUlcIjtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogNzAwO1xuICBzcmM6IHVybChcIn5Ac2FnZS9kZXNpZ24tdG9rZW5zL2Fzc2V0cy9mb250cy9zYWdldWktbWVkaXVtLndvZmYyXCIpXG4gICAgICBmb3JtYXQoXCJ3b2ZmMlwiKSxcbiAgICB1cmwoXCJ+QHNhZ2UvZGVzaWduLXRva2Vucy9hc3NldHMvZm9udHMvc2FnZXVpLW1lZGl1bS53b2ZmXCIpIGZvcm1hdChcIndvZmZcIiksXG4gICAgdXJsKFwifkBzYWdlL2Rlc2lnbi10b2tlbnMvYXNzZXRzL2ZvbnRzL3NhZ2V1aS1tZWRpdW0udHRmXCIpXG4gICAgICBmb3JtYXQoXCJ0cnVldHlwZVwiKSxcbiAgICB1cmwoXCJ+QHNhZ2UvZGVzaWduLXRva2Vucy9hc3NldHMvZm9udHMvc2FnZXVpLW1lZGl1bS5vdGZcIilcbiAgICAgIGZvcm1hdChcIm9wZW50eXBlXCIpO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiU2FnZSBVSVwiO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiA5MDA7XG4gIHNyYzogdXJsKFwifkBzYWdlL2Rlc2lnbi10b2tlbnMvYXNzZXRzL2ZvbnRzL3NhZ2V1aS1ib2xkLndvZmYyXCIpXG4gICAgICBmb3JtYXQoXCJ3b2ZmMlwiKSxcbiAgICB1cmwoXCJ+QHNhZ2UvZGVzaWduLXRva2Vucy9hc3NldHMvZm9udHMvc2FnZXVpLWJvbGQud29mZlwiKSBmb3JtYXQoXCJ3b2ZmXCIpLFxuICAgIHVybChcIn5Ac2FnZS9kZXNpZ24tdG9rZW5zL2Fzc2V0cy9mb250cy9zYWdldWktYm9sZC50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIiksXG4gICAgdXJsKFwifkBzYWdlL2Rlc2lnbi10b2tlbnMvYXNzZXRzL2ZvbnRzL3NhZ2V1aS1ib2xkLm90ZlwiKSBmb3JtYXQoXCJvcGVudHlwZVwiKTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */
+      </style>
+      <style>#main-frame-container {
+         display: flex;
+         flex-direction: column;
+         flex-grow: 1;
+         }
+         @media (min-width: 992px) {
+         #main-frame-container {
+         justify-content: center;
+         align-items: center;
+         margin: 100px 0;
+         }
+         }
+         #main-frame-container #main-frame {
+         display: flex;
+         flex-direction: column;
+         background-color: #ffffff;
+         }
+         @media (min-width: 992px) {
+         #main-frame-container #main-frame {
+         width: 750px;
+         min-height: 400px;
+         border: 1px solid rgba(0, 0, 0, 0.2196078431);
+         padding: 40px;
+         }
+         }
+         @media (max-width: 991px) {
+         #main-frame-container #main-frame {
+         padding: 24px;
+         flex-grow: 1;
+         }
+         }
+         /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL21haW4tZnJhbWUvTWFpbkZyYW1lLnNjc3MiLCJ3ZWJwYWNrOi8vLi9zcmMvc2Nzcy92YXJpYWJsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLFlBQUE7QUFESjtBQUdJO0VBTEo7SUFNUSx1QkFBQTtJQUNBLG1CQUFBO0lBQ0EsZUFBQTtFQUFOO0FBQ0Y7QUFFSTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLHlCQ2ZRO0FEZWhCO0FBRVE7RUFMSjtJQU1RLFlBQUE7SUFDQSxpQkFBQTtJQUNBLDZDQUFBO0lBQ0EsYUFBQTtFQUNWO0FBQ0Y7QUFDUTtFQVpKO0lBYVEsYUFBQTtJQUNBLFlBQUE7RUFFVjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vc2Nzcy92YXJpYWJsZXMuc2Nzcyc7XG5cbiNtYWluLWZyYW1lLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGZsZXgtZ3JvdzogMTtcblxuICAgIEBtZWRpYSAobWluLXdpZHRoOiAkbWluLXdpZHRoLWRlc2t0b3ApIHtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIG1hcmdpbjogMTAwcHggMDtcbiAgICB9XG5cbiAgICAjbWFpbi1mcmFtZSB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICRwcmltYXJ5LWNvbG9yO1xuXG4gICAgICAgIEBtZWRpYSAobWluLXdpZHRoOiAkbWluLXdpZHRoLWRlc2t0b3ApIHtcbiAgICAgICAgICAgIHdpZHRoOiA3NTBweDtcbiAgICAgICAgICAgIG1pbi1oZWlnaHQ6IDQwMHB4O1xuICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgJGJvcmRlci1jb2xvcjtcbiAgICAgICAgICAgIHBhZGRpbmc6IDQwcHg7XG4gICAgICAgIH1cblxuICAgICAgICBAbWVkaWEgKG1heC13aWR0aDogJG1heC13aWR0aC10YWJsZXQpIHtcbiAgICAgICAgICAgIHBhZGRpbmc6IDI0cHg7XG4gICAgICAgICAgICBmbGV4LWdyb3c6IDE7XG4gICAgICAgIH1cbiAgICB9XG59XG4iLCIvLyBjb2xvcnNcbiRwcmltYXJ5LWNvbG9yOiAjZmZmZmZmO1xuJGJhY2tncm91bmQtY29sb3I6ICNmMWY1ZjY7XG4kYm9yZGVyLWNvbG9yOiAjMDAwMDAwMzg7XG4kdGV4dC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjkpO1xuJGVycm9yLWNvbG9yOiAjY2Y0ZDRkO1xuJHdhcm5pbmctY29sb3I6ICNkZjllMjg7XG4kYWN0aXZlLWNvbG9yOiBmb3Jlc3RncmVlbjtcblxuLy8gc2NyZWVuIHNpemVzXG4kbWluLXdpZHRoLWRlc2t0b3A6IDk5MnB4O1xuJG1pbi13aWR0aC10YWJsZXQ6IDc2OHB4O1xuJG1heC13aWR0aC10YWJsZXQ6IDk5MXB4O1xuJG1heC13aWR0aC1tb2JpbGU6IDc2N3B4O1xuIl0sInNvdXJjZVJvb3QiOiIifQ== */
+      </style>
+      <style>.bank-account-li {
+         list-style-type: none;
+         text-align: left;
+         }
+         .hidden-back-button {
+         display: none !important;
+         }
+         /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0Zvb3Rlci9Gb290ZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHFCQUFBO0VBQ0EsZ0JBQUE7QUFDSjs7QUFDQTtFQUNJLHdCQUFBO0FBRUoiLCJzb3VyY2VzQ29udGVudCI6WyIuYmFuay1hY2NvdW50LWxpIHtcbiAgICBsaXN0LXN0eWxlLXR5cGU6bm9uZTtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xufVxuLmhpZGRlbi1iYWNrLWJ1dHRvbiB7XG4gICAgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50O1xufSJdLCJzb3VyY2VSb290IjoiIn0= */
+      </style>
+   </head>
+   <body>
+      <div class="app">
+         <div id="app" class="mainframe">
+            <div id="main-frame-container">
+               <div id="main-frame">
+                  <div height="80px" class="box">
+                     <h1 style="margin-top:0">Sage bank feeds terms and conditions</h1>
+                  </div>
+                  <div class="accordionGroup">
+                     <div onclick="accordionToggle(event)" id="Accordion_a5a382df-f361-46b1-d41b-263ea0f779b4" data-component="accordion" class="sc-cMljjf accordion">
+                        <div data-element="accordion-title-container" id="AccordionHeader_a5a382df-f361-46b1-d41b-263ea0f779b4" aria-expanded="false" aria-controls="AccordionContent_a5a382df-f361-46b1-d41b-263ea0f779b4" tabindex="0" role="button" class="sc-jlyJG cGtWjX">
+                           <div data-element="accordion-headings-container" class="sc-iRbamj jgzPGc">
+                              <span class="sc-jDwBTQ cpXYFh">What Sage can do with your data</span>
+                           </div>
+                           <span class="sc-ifAKCX brxwEX sc-gPEVay kxcrxH" data-element="accordion-icon" font-size="small" type="chevron_down" data-component="icon">
+                           </span>
+                        </div>
+                        <div class="accordionContentContainer open">
+                           <div role="region" data-element="accordion-content" id="AccordionContent_a5a382df-f361-46b1-d41b-263ea0f779b4" aria-labelledby="AccordionHeader_a5a382df-f361-46b1-d41b-263ea0f779b4" class="sc-csuQGl dZOxff">
+                              <div class="sc-bwzfXH ghkhBS">
+                                 <div class="sc-ckVGcZ kRfIfa">
+                                    <div class="sc-jKJlTe eMjZWG">
+                                       <div width="30" class="sc-gqjmRU jUkPaw"><label data-element="label" id="9d5f1eb2-718f-d630-5f82-b303aec69e49-label" for="9d5f1eb2-718f-d630-5f82-b303aec69e49" class="sc-gZMcBi cDOVhw">Textbox in an Accordion</label></div>
+                                       <div class="sc-jTzLTM kiOGvy">
+                                          <div role="presentation" class="sc-fjdhpX fgpoem"><input type="text" aria-invalid="false" aria-describedby="" name="6ce76879-7b26-6233-3995-5a68bd523552" id="9d5f1eb2-718f-d630-5f82-b303aec69e49" data-element="input" class="sc-kpOJdX jgnpjX"/></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div onclick="accordionToggle(event)" id="Accordion_ef777671-0d18-2241-d113-a2e583a847cf" data-component="accordion" class="sc-cMljjf accordion">
+                        <div  data-element="accordion-title-container" id="AccordionHeader_ef777671-0d18-2241-d113-a2e583a847cf" aria-expanded="false" aria-controls="AccordionContent_ef777671-0d18-2241-d113-a2e583a847cf" tabindex="0" role="button" class="sc-jlyJG cGtWjX">
+                           <div data-element="accordion-headings-container" class="sc-iRbamj jgzPGc"><span class="sc-jDwBTQ cpXYFh">What you&#x27;ll share with Sage</span></div>
+                           <span  class="sc-ifAKCX brxwEX sc-gPEVay kxcrxH" data-element="accordion-icon" font-size="small" type="chevron_down" data-component="icon"></span>
+                        </div>
+                        <div class="accordionContentContainer closed">
+                           <div role="region" data-element="accordion-content" id="AccordionContent_ef777671-0d18-2241-d113-a2e583a847cf" aria-labelledby="AccordionHeader_ef777671-0d18-2241-d113-a2e583a847cf" class="sc-csuQGl dZOxff">
+                              <div class="sc-bwzfXH ghkhBS">
+                                 <div class="sc-ckVGcZ kRfIfa">
+                                    <div class="sc-jKJlTe eMjZWG">
+                                       <div width="30" class="sc-gqjmRU jUkPaw"><label data-element="label" id="eae21519-d5f8-4e9f-9527-66bf295118e4-label" for="eae21519-d5f8-4e9f-9527-66bf295118e4" class="sc-gZMcBi cDOVhw">Textbox in an Accordion</label></div>
+                                       <div class="sc-jTzLTM kiOGvy">
+                                          <div role="presentation" class="sc-fjdhpX fgpoem"><input type="text" aria-invalid="false" aria-describedby="" name="90a6edf7-3fa8-018c-bf8d-8ca1d9184e92" id="eae21519-d5f8-4e9f-9527-66bf295118e4" data-element="input" class="sc-kpOJdX jgnpjX"/></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div onclick="accordionToggle(event)" id="Accordion_4b280a59-a0f2-3670-fa00-d3185c1c0073" data-component="accordion" class="sc-cMljjf accordion">
+                        <div data-element="accordion-title-container" id="AccordionHeader_4b280a59-a0f2-3670-fa00-d3185c1c0073" aria-expanded="false" aria-controls="AccordionContent_4b280a59-a0f2-3670-fa00-d3185c1c0073" tabindex="0" role="button" class="sc-jlyJG cGtWjX">
+                           <div data-element="accordion-headings-container" class="sc-iRbamj jgzPGc"><span class="sc-jDwBTQ cpXYFh">What you&#x27;ll get from Sage</span></div>
+                           <span class="sc-ifAKCX brxwEX sc-gPEVay kxcrxH" data-element="accordion-icon" font-size="small" type="chevron_down" data-component="icon"></span>
+                        </div>
+                        <div class="accordionContentContainer closed">
+                           <div role="region" data-element="accordion-content" id="AccordionContent_4b280a59-a0f2-3670-fa00-d3185c1c0073" aria-labelledby="AccordionHeader_4b280a59-a0f2-3670-fa00-d3185c1c0073" class="sc-csuQGl dZOxff">
+                              <div class="sc-bwzfXH ghkhBS">
+                                 <div>Content</div>
+                                 <div>Content</div>
+                                 <div>Content</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <p>By selecting <b>Continue</b> you are agreeing to Sage retrieving your data for a 90-day period. Read the Sage bank feeds <a href="">terms and conditions</a> for more information.</p>
+                  <div>
+                     <div data-component="grid" class="sc-cvbbAY ZzQrt">
+                        <div class="sc-jWBwVP gOxHaP"><button draggable="false" role="button" type="button" data-component="button" data-testid="undefined-btn-back" class="sc-kgoBCf jgXbGG"><span><span data-element="main-text">Back</span></span></button></div>
+                        <div class="sc-jWBwVP eEKnQS"><button draggable="false" role="button" type="button" data-component="button" data-testid="undefined-btn-continue" class="sc-kgoBCf iJcayT"><span><span data-element="main-text">Continue</span></span></button></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
