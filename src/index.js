@@ -10,6 +10,11 @@ import "carbon-react/lib/style/fonts.css";
 import ReactDOMServer from "react-dom/server";
 import MainFrame from "./components/main-frame";
 import Footer from "./components/Footer";
+import PageFooter from "./components/page-footer";
+import Typography, {
+  List,
+  ListItem,
+} from "carbon-react/lib/components/typography";
 
 
 import {
@@ -22,24 +27,51 @@ const App = () => {
       <GlobalStyle id= {"GlobalStyle"}/>
           <MainFrame id={"MainFrame"}>
 
-
       <Box height="80px" bg="white"> <h1 style={{"marginTop": 0}}>Sage bank feeds terms and conditions</h1></Box>
             <AccordionGroup id={"Accordion-Group"}>
-              <Accordion subTitle="What Sage can do with your data">
+              <Accordion disableContentPadding subTitle="What Sage can do with your data">
                 <Box p={2}>
-                  <Textbox label="Textbox in an Accordion" />
+                  <List>
+                    <ListItem>
+                      Connect to your bank account.
+                    </ListItem>
+                    <ListItem>
+                      Receive transaction information and import it into Sage.
+                    </ListItem>
+                  </List>
                 </Box>
               </Accordion>
-              <Accordion subTitle="What you'll share with Sage">
+              <Accordion disableContentPadding subTitle="What you'll share with Sage">
                 <Box p={2}>
-                  <Textbox label="Textbox in an Accordion" />
+                  <List>
+                    <ListItem>
+                    Transaction information for example, amount, date, type and transaction description
+                    </ListItem>
+                    <ListItem>
+                      Account name
+                    </ListItem>
+                    <ListItem>
+                      Account number
+                    </ListItem>
+                    <ListItem>
+                      Sort code
+                    </ListItem>
+                  </List>
                 </Box>
               </Accordion>
-              <Accordion subTitle="What you'll get from Sage">
+              <Accordion disableContentPadding subTitle="What you'll get from Sage">
                 <Box p={2}>
-                  <div>Content</div>
-                  <div>Content</div>
-                  <div>Content</div>
+                <List>
+                    <ListItem>
+                    A real-time overview of your transactions
+                    </ListItem>
+                    <ListItem>
+                    Secure connections to banks to keep your data safe
+                    </ListItem>
+                    <ListItem>
+                      Automatic data entry, saving you time
+                    </ListItem>
+                  </List>
                 </Box>
               </Accordion>
             </AccordionGroup>
@@ -47,6 +79,13 @@ const App = () => {
             Read the Sage bank feeds <a href="">terms and conditions</a> for more information.</p>
             <Footer/>
           </MainFrame>
+          <PageFooter style = {{"border": "none", borderStyle: "none"}} className = {"no-border"}>
+
+          <p>Having trouble connecting your bank? <a href="">Go to the Help Centre (opens in a new tab)</a></p>
+          <Button mt={2} buttonType="tertiary" iconType="refresh" noWrap>
+            Restart Connection
+          </Button>
+      </PageFooter>
     </CarbonProvider>
   );
 };

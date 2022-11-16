@@ -1,14 +1,35 @@
 @import '../../scss/variables.scss';
 
+.no-border {
+    border: none;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+a {
+    box-sizing: border-box;
+    font-weight: 600;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    /* background: transparent; */
+    /* border-color: transparent; */
+    color: var(--colorsActionMajor500);
+    font-size: var(--fontSizes100);
+    text-decoration: underline;
+}
+
 #main-frame-container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    background: #f5f5f5;
 
     @media (min-width: $min-width-desktop) {
         justify-content: center;
         align-items: center;
-        margin: 100px 0;
+        margin: 100px 0 0;
     }
 
     #main-frame {
@@ -24,7 +45,8 @@
         }
 
         @media (max-width: $max-width-tablet) {
-            padding: 24px;
+            padding: 12px;
+            margin: 12px;
             flex-grow: 1;
         }
     }
