@@ -81,7 +81,7 @@ const App = () => {
           </MainFrame>
           <PageFooter style = {{"border": "none", borderStyle: "none"}} className = {"no-border"}>
 
-          <p>Having trouble connecting your bank? <a href="">Go to the Help Centre (opens in a new tab)</a></p>
+          <p style={{"textAlign": "center"}}>Having trouble connecting your bank? <a href="">Go to the Help Centre (opens in a new tab)</a></p>
           <Button mt={2} buttonType="tertiary" iconType="refresh" noWrap>
             Restart Connection
           </Button>
